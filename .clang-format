@@ -1,5 +1,6 @@
 BasedOnStyle: WebKit
 AllowShortFunctionsOnASingleLine: Inline
+InsertBraces: true
 DerivePointerAlignment: true
 IndentCaseLabels: true
 SpaceAfterCStyleCast: true
