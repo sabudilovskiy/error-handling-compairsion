@@ -1,0 +1,49 @@
+BasedOnStyle: WebKit
+AllowShortFunctionsOnASingleLine: Inline
+DerivePointerAlignment: true
+IndentCaseLabels: true
+SpaceAfterCStyleCast: true
+UseTab: Never
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterClass: true
+    AfterControlStatement: false
+    AfterEnum: true
+    AfterFunction: true
+    AfterNamespace: true
+    AfterObjCDeclaration: false
+    AfterStruct: true
+    AfterUnion: true
+    BeforeCatch: false
+    BeforeElse: false
+    IndentBraces: false
+SortIncludes: true
+IncludeBlocks: Regroup
+
+IncludeCategories:
+  # std c++
+  - Regex: '^<([a-z_]+)>'
+    Priority: 1
+
+  # std c
+  - Regex: '^<([a-z_]+\\.h)>'
+    Priority: 2
+
+  # POSIX
+  - Regex: '^<.*/.*\\.h>'
+    Priority: 3
+
+  - Regex: '^<(unistd|pthread|signal|fcntl|syscall)\.h>'
+    Priority: 3
+
+  # ideco 
+  - Regex: '^<ideco/.*>'
+    Priority: 4
+
+  # another libs
+  - Regex: '^<.*>'
+    Priority: 5
+
+  # local
+  - Regex: '^".*"'
+    Priority: 6

@@ -1,0 +1,11 @@
+{
+  "host": "localhost",
+  "port": 8080,
+  "timeout_ms": 5000,
+  "debug": true,
+  "database": {
+    "connection_string": "postgresql://user:pass@localhost/db",
+    "pool_size": 10
+  },
+  "features": ["logging", "metrics", "tracing"]
+}
