@@ -22,16 +22,10 @@ jobs:
         include:  
           - type: debug
             compiler: clang
-            version: 17
-          - type: debug
-            compiler: clang
             version: 19
           - type: debug
             compiler: gcc
             version: 14
-          - type: release
-            compiler: clang
-            version: 17
           - type: release
             compiler: clang
             version: 19
