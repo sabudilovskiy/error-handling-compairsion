@@ -3,7 +3,7 @@
 #include <boost/outcome.hpp>
 #include <fmt/format.h>
 
-#include "config_common.hpp"
+#include "common.hpp"
 
 namespace outcome = boost::outcome_v2;
 

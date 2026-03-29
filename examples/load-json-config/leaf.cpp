@@ -2,7 +2,7 @@
 #include <boost/leaf/result.hpp>
 #include <fmt/format.h>
 
-#include "config_common.hpp"
+#include "common.hpp"
 
 namespace leaf = boost::leaf;
 
