@@ -58,21 +58,48 @@ if (!file.is_open())
 ## Архитектура
 
 ### Общий код
-- Структуры данных и утилиты выносить в `config_common.hpp`
+- Структуры данных и утилиты выносить в `*_common.hpp`
 - Избегать дублирования кода между примерами
+- Использовать `run_demo()` из общего хедера для единообразия тестов
 
 ### Обработка ошибок
 - Пробрасывать ошибки через слои с обогащением контекста
 - Для каждого подхода (exceptions, error_code, expected, outcome, leaf) — отдельный файл
+- Использовать лямбды в `main()` для передачи обработчика в `run_demo()`
 
 ## Пример структуры
 ```
 examples/load-json-config/
-├── config_common.hpp    # Общие структуры и утилиты
+├── common.hpp    # Общие структуры и утилиты
 ├── config.json          # Тестовый конфиг
 ├── exceptions.cpp       # Исключения
 ├── errc.cpp            # std::error_code
 ├── expected.cpp        # std::expected
 ├── outcome.cpp         # boost::outcome
 └── leaf.cpp            # boost::leaf
+
+examples/http-request/
+├── common.hpp      # Общие структуры, утилиты и run_demo()
+├── exceptions.cpp       # Исключения с retry логикой
+├── errc.cpp            # std::error_code
+├── expected.cpp        # std::expected
+├── outcome.cpp         # boost::outcome
+└── leaf.cpp            # boost::leaf
 ```
+
+## Сборка проекта
+
+Всегда использовать CMake presets:
+
+```bash
+# Конфигурация
+cmake --preset clang_debug
+
+# Сборка
+cmake --build build --target <target-name>
+
+# Сборка всех таргетов
+cmake --build build
+```
+
+Не запускать `cmake -B build -S .` напрямую — это обходит preset и ломает сборку.

@@ -2,7 +2,7 @@
 
 #include <fmt/format.h>
 
-#include "config_common.hpp"
+#include "common.hpp"
 
 enum class config_errc
 {

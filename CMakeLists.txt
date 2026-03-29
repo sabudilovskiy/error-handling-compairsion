@@ -4,6 +4,10 @@ project(error-handling-compairsion)
 
 include (${CMAKE_CURRENT_SOURCE_DIR}/cmake/deps.cmake)
 
+target_compile_options(boost_context PUBLIC -Wno-unused-command-line-argument)
+target_compile_options(wolfssl PUBLIC -Wno-microsoft-static-assert -Wno-incompatible-function-pointer-types -Wno-tautological-constant-out-of-range-compare -Wno-constant-conversion -Wno-incompatible-pointer-types)
+target_compile_definitions(wolfssl PUBLIC CPPHTTPLIB_WOLFSSL_SUPPORT=1)
+
 file(GLOB_RECURSE EXAMPLE_SOURCES "examples/*/**.cpp")
 
 foreach(SOURCE ${EXAMPLE_SOURCES})
@@ -23,7 +27,14 @@ foreach(SOURCE ${EXAMPLE_SOURCES})
     set(TARGET_NAME "example-${TARGET_NAME}")
     
     add_executable(${TARGET_NAME} ${SOURCE})
-    target_link_libraries(${TARGET_NAME} PUBLIC Boost::leaf Boost::outcome nlohmann_json::nlohmann_json fmt::fmt)
+    target_link_libraries(${TARGET_NAME} PUBLIC 
+        Boost::leaf
+        Boost::outcome
+        nlohmann_json::nlohmann_json
+        fmt::fmt
+        httplib::httplib
+        wolfssl
+    )
 endforeach()
 
 

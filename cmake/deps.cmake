@@ -9,6 +9,26 @@ CPMAddPackage(
 )
 unset(BOOST_INCLUDE_LIBRARIES)
 
+CPMAddPackage(
+  NAME wolfssl
+  GITHUB_REPOSITORY wolfSSL/wolfssl
+  GIT_TAG "v5.8.0-stable"
+  OPTIONS
+    "WOLFSSL_EXAMPLES OFF"
+    "WOLFSSL_TESTING OFF"
+    "WOLFSSL_THREAD_NO_JOIN OFF"
+    "WOLFSSL_OPENSSLEXTRA ON"
+    "WOLFSSL_CLU ON"
+)
+
+CPMAddPackage(
+  NAME httplib
+  GITHUB_REPOSITORY yhirose/cpp-httplib
+  GIT_TAG v0.40.0
+  OPTIONS
+    "HTTPLIB_USE_WOLFSSL_IF_AVAILABLE ON"
+    "HTTPLIB_USE_OPENSSL_IF_AVAILABLE OFF"
+)
+
 CPMAddPackage("gh:fmtlib/fmt#11.2.0")
 CPMAddPackage("gh:nlohmann/json#v3.12.0")
-
