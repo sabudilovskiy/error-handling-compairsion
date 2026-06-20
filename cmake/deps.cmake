@@ -32,3 +32,28 @@ CPMAddPackage(
 
 CPMAddPackage("gh:fmtlib/fmt#11.2.0")
 CPMAddPackage("gh:nlohmann/json#v3.12.0")
+
+CPMAddPackage(
+  NAME benchmark
+  GITHUB_REPOSITORY google/benchmark
+  GIT_TAG v1.9.5
+  OPTIONS
+    "BENCHMARK_ENABLE_TESTING OFF"
+    "BENCHMARK_ENABLE_INSTALL OFF"
+    "BENCHMARK_DOWNLOAD_DEPENDENCIES ON"
+)
+
+CPMAddPackage(
+  NAME googletest
+  GITHUB_REPOSITORY google/googletest
+  GIT_TAG v1.16.0
+  OPTIONS
+    "INSTALL_GTEST OFF"
+    "gtest_force_shared_crt ON"
+)
+
+CPMAddPackage(
+  NAME magic_enum
+  GIT_REPOSITORY https://github.com/Neargye/magic_enum
+  GIT_TAG        origin/master
+)

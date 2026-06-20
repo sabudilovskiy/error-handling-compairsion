@@ -37,10 +37,6 @@ IncludeCategories:
   - Regex: '^<(unistd|pthread|signal|fcntl|syscall)\.h>'
     Priority: 3
 
-  # ideco 
-  - Regex: '^<ideco/.*>'
-    Priority: 4
-
   # another libs
   - Regex: '^<.*>'
     Priority: 5
