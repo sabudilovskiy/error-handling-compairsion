@@ -17,7 +17,6 @@ target_link_libraries(${PROJECT_NAME}-lib PUBLIC
     nlohmann_json::nlohmann_json
     fmt::fmt
     httplib::httplib
-    wolfssl
     magic_enum::magic_enum
 )
 

@@ -9,17 +9,17 @@ CPMAddPackage(
 )
 unset(BOOST_INCLUDE_LIBRARIES)
 
-CPMAddPackage(
-  NAME wolfssl
-  GITHUB_REPOSITORY wolfSSL/wolfssl
-  GIT_TAG "v5.8.0-stable"
-  OPTIONS
-    "WOLFSSL_EXAMPLES OFF"
-    "WOLFSSL_TESTING OFF"
-    "WOLFSSL_THREAD_NO_JOIN OFF"
-    "WOLFSSL_OPENSSLEXTRA ON"
-    "WOLFSSL_CLU ON"
-)
+# CPMAddPackage(
+#   NAME wolfssl
+#   GITHUB_REPOSITORY wolfSSL/wolfssl
+#   GIT_TAG "v5.8.0-stable"
+#   OPTIONS
+#     "WOLFSSL_EXAMPLES OFF"
+#     "WOLFSSL_TESTING OFF"
+#     "WOLFSSL_THREAD_NO_JOIN OFF"
+#     "WOLFSSL_OPENSSLEXTRA ON"
+#     "WOLFSSL_CLU ON"
+# )
 
 CPMAddPackage(
   NAME httplib
@@ -58,13 +58,13 @@ CPMAddPackage(
   GIT_TAG        origin/master
 )
 
-target_compile_options(wolfssl PUBLIC 
-    -Wno-microsoft-static-assert 
-    -Wno-incompatible-function-pointer-types 
-    -Wno-tautological-constant-out-of-range-compare 
-    -Wno-constant-conversion 
-    -Wno-incompatible-pointer-types
-)
-target_compile_definitions(wolfssl PUBLIC CPPHTTPLIB_WOLFSSL_SUPPORT=1)
+# target_compile_options(wolfssl PUBLIC 
+#     -Wno-microsoft-static-assert 
+#     -Wno-incompatible-function-pointer-types 
+#     -Wno-tautological-constant-out-of-range-compare 
+#     -Wno-constant-conversion 
+#     -Wno-incompatible-pointer-types
+# )
+# target_compile_definitions(wolfssl PUBLIC CPPHTTPLIB_WOLFSSL_SUPPORT=1)
 
 target_compile_options(benchmark PUBLIC -Wno-format-nonliteral)
