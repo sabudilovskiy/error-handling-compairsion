@@ -21,7 +21,6 @@
 #include "common/visit_index.hpp"
 #include "path.hpp"
 
-
 namespace json::exceptions
 {
 
@@ -39,7 +38,31 @@ using ref = boost::json::value&;
 
 struct parse_error : common::error
 {
-    using common::error::error;
+    path_t::value_type path_elems_;
+
+    template <typename... Args>
+    parse_error(std::format_string<Args...> fmt_str, Args&&... args)
+        : common::error(fmt_str, std::forward<Args>(args)...)
+    {
+        auto try_extract_path = common::matcher {
+            [&](auto&) {},
+            [&](const path_t& p) {
+                path_elems_ = *p.elems_;
+            }
+        };
+
+        (try_extract_path(args), ...);
+    }
+
+    const path_t::value_type& path() const
+    {
+        return path_elems_;
+    }
+
+    std::string path_str() const
+    {
+        return path_to_str(path_elems_);
+    }
 };
 
 struct type_error : parse_error
@@ -183,7 +206,7 @@ struct reader<std::string>
     static result<std::string> read(cref json, const path_t& p)
     {
         if (!json.is_string()) {
-            throw type_error("expected string at {}", p.to_string());
+            throw type_error("expected string at {}", p);
         }
         return std::string(json.get_string());
     }
@@ -197,19 +220,19 @@ struct reader<T>
         if (json.is_int64()) {
             const std::int64_t from = json.get_int64();
             if (!std::in_range<T>(from)) {
-                throw validate_error("integer out of range at {}", p.to_string());
+                throw validate_error("integer out of range at {}", p);
             }
             return static_cast<T>(from);
         } else if (json.is_uint64()) {
             const std::uint64_t from = json.get_uint64();
             if (!std::in_range<T>(from)) {
-                throw validate_error("integer out of range at {}", p.to_string());
+                throw validate_error("integer out of range at {}", p);
             }
             return static_cast<T>(from);
         } else {
             throw type_error("expected {} at {}",
                 std::unsigned_integral<T> ? "uint64" : "int64",
-                p.to_string());
+                p);
         }
     }
 };
@@ -220,7 +243,7 @@ struct reader<double>
     static result<double> read(cref json, const path_t& p)
     {
         if (!json.is_double()) {
-            throw type_error("expected floating-point at {}", p.to_string());
+            throw type_error("expected floating-point at {}", p);
         }
         return json.get_double();
     }
@@ -232,7 +255,7 @@ struct reader<bool>
     static result<bool> read(cref json, const path_t& p)
     {
         if (!json.is_bool()) {
-            throw type_error("expected boolean at {}", p.to_string());
+            throw type_error("expected boolean at {}", p);
         }
         return json.get_bool();
     }
@@ -272,7 +295,7 @@ struct reader<std::vector<T>>
     static result<std::vector<T>> read(cref json, const path_t& p)
     {
         if (!json.is_array()) {
-            throw type_error("expected array at {}", p.to_string());
+            throw type_error("expected array at {}", p);
         }
         const auto& arr = json.get_array();
         std::vector<T> out;
@@ -292,12 +315,12 @@ struct reader<T>
     static result<T> read(cref json, const path_t& p)
     {
         if (!json.is_array()) {
-            throw type_error("expected array at {}", p.to_string());
+            throw type_error("expected array at {}", p);
         }
         const auto& arr = json.get_array();
         if (arr.size() != Size) {
             throw validate_error("expected array of size {}, got {} at {}",
-                Size, arr.size(), p.to_string());
+                Size, arr.size(), p);
         }
         T out;
         common::for_each_index<Size>([&]<std::size_t I>() {
@@ -313,7 +336,7 @@ struct reader<std::set<T>>
     static result<std::set<T>> read(cref json, const path_t& p)
     {
         if (!json.is_array()) {
-            throw type_error("expected array at {}", p.to_string());
+            throw type_error("expected array at {}", p);
         }
         const auto& arr = json.get_array();
         std::set<T> out;
@@ -332,7 +355,7 @@ struct reader<std::unordered_set<T>>
     static result<std::unordered_set<T>> read(cref json, const path_t& p)
     {
         if (!json.is_array()) {
-            throw type_error("expected array at {}", p.to_string());
+            throw type_error("expected array at {}", p);
         }
         const auto& arr = json.get_array();
         std::unordered_set<T> out;
@@ -351,7 +374,7 @@ struct reader<std::map<std::string, T>>
     static result<std::map<std::string, T>> read(cref json, const path_t& p)
     {
         if (!json.is_object()) {
-            throw type_error("expected object at {}", p.to_string());
+            throw type_error("expected object at {}", p);
         }
         std::map<std::string, T> out;
         for (const auto& kv : json.get_object()) {
@@ -368,7 +391,7 @@ struct reader<std::unordered_map<std::string, T>>
     static result<std::unordered_map<std::string, T>> read(cref json, const path_t& p)
     {
         if (!json.is_object()) {
-            throw type_error("expected object at {}", p.to_string());
+            throw type_error("expected object at {}", p);
         }
         std::unordered_map<std::string, T> out;
         for (const auto& kv : json.get_object()) {
@@ -386,7 +409,7 @@ struct reader<T>
     static result<T> read(cref json, const path_t& p)
     {
         if (!json.is_object()) {
-            throw type_error("expected object at {}", p.to_string());
+            throw type_error("expected object at {}", p);
         }
         const auto& obj = json.get_object();
 
@@ -404,7 +427,7 @@ struct reader<T>
                 // key present but explicitly null and field is not optional
                 field_out = read_from<F>(*found, p[name]);
             } else {
-                throw missing_field_error("missing field '{}' at {}", name, p.to_string());
+                throw missing_field_error("missing field '{}' at {}", name, p);
             }
         });
 
@@ -419,12 +442,12 @@ struct reader<T>
     static result<T> read(cref json, const path_t& p)
     {
         if (!json.is_string()) {
-            throw type_error("expected string (duration) at {}", p.to_string());
+            throw type_error("expected string (duration) at {}", p);
         }
         const std::string_view str = json.get_string();
         std::optional parsed = common::parse_duration<T>(str);
         if (!parsed) {
-            throw validate_error("invalid duration format at {}. Value: `{}`", p.to_string(), json);
+            throw validate_error("invalid duration format at {}. Value: `{}`", p, json);
         }
         return *parsed;
     }
@@ -437,12 +460,12 @@ struct reader<E>
     static result<E> read(cref json, const path_t& p)
     {
         if (!json.is_string()) {
-            throw type_error("expected string (duration) at {}", p.to_string());
+            throw type_error("expected string (duration) at {}", p);
         }
         const std::string_view str = json.get_string();
         std::optional parsed = magic_enum::enum_cast<E>(str);
         if (!parsed) {
-            throw validate_error("invalid duration format at {}", p.to_string());
+            throw validate_error("invalid duration format at {}", p);
         }
         return *parsed;
     }

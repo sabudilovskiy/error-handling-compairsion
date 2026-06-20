@@ -72,7 +72,7 @@ struct formatter<std::variant<Ts...>> : formatter<std::string_view>
     {
         auto out = ctx.out();
         auto visiter = [&]<typename U>(const U& value) {
-            out = std::format_to(out, "(`{}`: {})", common::name_of_type_v<U>, value);
+            out = std::format_to(out, "{}", value);
         };
         std::visit(visiter, t);
         return out;

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cassert>
 #include <format>
 #include <ranges>
 #include <string>
@@ -10,6 +11,33 @@
 
 namespace json
 {
+
+using path_value_t = std::vector<std::variant<std::string_view, std::size_t>>;
+
+inline std::string path_to_str(const path_value_t& elems)
+{
+    if (elems.empty()) {
+        return "<root>";
+    }
+    std::string result = "";
+
+    // clang-format off
+        common::visit(elems.front(), 
+            [&](std::string_view e) { result += e; }, 
+            [&](std::size_t e) { result += std::format("[{}]", e); 
+        });
+
+        for (auto& elem : elems | std::ranges::views::drop(1)) {
+            common::visit(elem, 
+                [&](std::string_view e) { result += "."; result += e; },
+                [&](std::size_t e) { result += std::format("[{}]", e);}
+            );
+        }
+
+    // clang-format on
+
+    return result;
+}
 
 /*
 A hierarchical path tracker for navigating JSON document structure.
@@ -36,7 +64,7 @@ Example paths:
 */
 struct path_t
 {
-    using value_type = std::vector<std::variant<std::string_view, std::size_t>>;
+    using value_type = path_value_t;
 
     path_t() = default;
 
@@ -86,27 +114,8 @@ struct path_t
 
     std::string to_string() const
     {
-        if (elems_->empty()) {
-            return "<root>";
-        }
-        std::string result = "";
-
-        // clang-format off
-        common::visit(elems_->front(), 
-            [&](std::string_view e) { result += e; }, 
-            [&](std::size_t e) { result += std::format("[{}]", e); 
-        });
-
-        for (auto& elem : *elems_ | std::ranges::views::drop(1)) {
-            common::visit(elem, 
-                [&](std::string_view e) { result += "."; result += e; },
-                [&](std::size_t e) { result += std::format("[{}]", e);}
-            );
-        }
-
-        // clang-format on
-
-        return result;
+        assert(elems_);
+        return path_to_str(*elems_);
     }
 
     value_type* elems_;

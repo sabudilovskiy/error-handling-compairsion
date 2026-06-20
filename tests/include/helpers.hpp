@@ -1,6 +1,7 @@
 #pragma once
 
 #include <format>
+#include <fstream>
 #include <map>
 #include <optional>
 #include <set>
@@ -14,11 +15,23 @@
 #include <boost/pfr/core.hpp>
 
 #include "common/box.hpp"
+#include "common/error.hpp"
+#include "common/formatters.hpp"
 #include "common/name_type.hpp"
 #include "common/pfr_extension.hpp"
 #include "common/traits.hpp"
 #include "common/visit_index.hpp"
 #include "json/path.hpp"
+
+namespace std
+{
+
+template <formattable<char> T>
+void PrintTo(const T& t, std::ostream* os)
+{
+    std::format_to(std::ostreambuf_iterator(*os), "{}", t);
+}
+} // namespace std
 
 namespace testing
 {
@@ -324,3 +337,87 @@ template <typename T>
                           << _msg;                                          \
         }                                                                   \
     } while (false)
+
+namespace testing::details
+{
+
+template <typename ExT>
+struct exception_holder
+{
+    std::optional<ExT> ex;
+
+    template <typename Fn>
+    void operator+(Fn&& fn) const
+    {
+        if (ex) {
+            std::forward<Fn>(fn)(*ex);
+        }
+    }
+};
+
+} // namespace testing::details
+
+#define EXPECT_THROW_SCOPE_CONCAT_IMPL(a, b) a##b
+#define EXPECT_THROW_SCOPE_CONCAT(a, b) EXPECT_THROW_SCOPE_CONCAT_IMPL(a, b)
+#define EXPECT_THROW_SCOPE_UNIQ(base) EXPECT_THROW_SCOPE_CONCAT(base, __LINE__)
+
+// Внутренний макрос: ловит исключение и кладёт в holder.
+// Используется обоими публичными макросами.
+#define EXPECT_THROW_SCOPE_CATCH_(var, ExType, expr)                   \
+    ::testing::details::exception_holder<ExType> var {};               \
+    do {                                                               \
+        try {                                                          \
+            (void) (expr);                                             \
+            ADD_FAILURE() << "Expected exception of type " #ExType     \
+                          << ", but no exception was thrown";          \
+        } catch (const ExType& _caught_) {                             \
+            var.ex = _caught_;                                         \
+        } catch (...) {                                                \
+            ADD_FAILURE() << "Expected exception of type " #ExType     \
+                          << ", but a different exception was thrown"; \
+        }                                                              \
+    } while (false)
+
+#define EXPECT_THROW_THAT(expr, ExType)                                     \
+    EXPECT_THROW_SCOPE_CATCH_(EXPECT_THROW_SCOPE_UNIQ(_ex_), ExType, expr); \
+    EXPECT_THROW_SCOPE_UNIQ(_ex_) + [&](const ExType& ex)
+
+inline void add_nested(json::path_value_t& out, std::size_t N)
+{
+    N = N - out.size();
+    for (std::size_t i = 0; i < N; i++) {
+        out.emplace_back("nested");
+    }
+}
+
+inline std::string load_file(std::filesystem::path path)
+{
+    path = "resources" / path;
+    std::error_code fs_ec;
+    const auto file_size = std::filesystem::file_size(path, fs_ec);
+
+    if (fs_ec) {
+        throw common::error(
+            "failed to stat '{}': {}", path.generic_string(), fs_ec.message());
+    }
+
+    std::ifstream file(path, std::ios::binary);
+    if (!file.is_open()) {
+        const auto ec = std::error_code(errno, std::generic_category());
+        throw common::error("failed to open '{}': {}", path.generic_string(), ec.message());
+    }
+
+    std::string result(static_cast<std::size_t>(file_size), '\0');
+
+    file.read(result.data(), static_cast<std::streamsize>(result.size()));
+
+    if (file.bad()) {
+        throw common::error("failed to read '{}': I/O error", path.generic_string());
+    }
+
+    if (static_cast<std::size_t>(file.gcount()) != result.size()) {
+        throw common::error("failed to read '{}': short read", path.generic_string());
+    }
+
+    return result;
+}

@@ -22,16 +22,6 @@ target_link_libraries(${PROJECT_NAME}-lib PUBLIC
 )
 
 target_compile_options(boost_context PUBLIC -Wno-unused-command-line-argument)
-target_compile_options(wolfssl PUBLIC 
-    -Wno-microsoft-static-assert 
-    -Wno-incompatible-function-pointer-types 
-    -Wno-tautological-constant-out-of-range-compare 
-    -Wno-constant-conversion 
-    -Wno-incompatible-pointer-types
-)
-target_compile_definitions(wolfssl PUBLIC CPPHTTPLIB_WOLFSSL_SUPPORT=1)
-
-target_compile_options(benchmark PUBLIC -Wno-format-nonliteral)
 
 add_subdirectory(benchs)
 add_subdirectory(tests)

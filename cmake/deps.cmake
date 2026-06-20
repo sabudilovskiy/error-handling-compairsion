@@ -57,3 +57,14 @@ CPMAddPackage(
   GIT_REPOSITORY https://github.com/Neargye/magic_enum
   GIT_TAG        origin/master
 )
+
+target_compile_options(wolfssl PUBLIC 
+    -Wno-microsoft-static-assert 
+    -Wno-incompatible-function-pointer-types 
+    -Wno-tautological-constant-out-of-range-compare 
+    -Wno-constant-conversion 
+    -Wno-incompatible-pointer-types
+)
+target_compile_definitions(wolfssl PUBLIC CPPHTTPLIB_WOLFSSL_SUPPORT=1)
+
+target_compile_options(benchmark PUBLIC -Wno-format-nonliteral)
