@@ -12,7 +12,7 @@
 namespace json
 {
 
-using path_value_t = std::vector<std::variant<std::string_view, std::size_t>>;
+using path_value_t = std::vector<std::variant<std::string, std::size_t>>;
 
 inline std::string path_to_str(const path_value_t& elems)
 {
@@ -87,7 +87,7 @@ struct path_t
 
     path_t operator[](std::string_view key) const
     {
-        elems_->emplace_back(key);
+        elems_->emplace_back(std::string { key });
         return path_t(*elems_);
     }
 
