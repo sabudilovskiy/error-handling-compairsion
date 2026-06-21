@@ -45,7 +45,7 @@
     "CIKJ": "ZJUUMQCQUGMTQEZQUCJBH"
   },
   "rate_limits": [
-    true,
+    2316,
     [
       "CKOLFPOJOEWOUGIKFDHP",
       18954,

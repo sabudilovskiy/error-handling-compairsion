@@ -86,7 +86,7 @@
           "log_level": "warning",
           "retry": {
             "max_attempts": 76,
-            "base_delay": true
+            "base_delay": []
           },
           "tags": []
         }

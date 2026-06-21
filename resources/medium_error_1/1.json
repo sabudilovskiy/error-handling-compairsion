@@ -1,6 +1,6 @@
 {
   "service_name": "ZYCI",
-  "worker_threads": null,
+  "worker_threads": [],
   "enable_tracing": false,
   "shutdown_grace_period": "5s",
   "backends": [

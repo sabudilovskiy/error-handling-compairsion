@@ -15,7 +15,7 @@
           "connect_timeout": "25ms",
           "retry": {
             "max_attempts": 64,
-            "base_delay": false,
+            "base_delay": [],
             "backoff_multiplier": -8667.7597
           },
           "tags": [

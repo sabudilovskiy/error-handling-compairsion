@@ -266,7 +266,7 @@
       {
         "metric_name": "PBUCERPSEGLWEIXLCMPAQOGXHGWZAXW",
         "warn_at": -3919.4231,
-        "crit_at": [],
+        "crit_at": false,
         "evaluation_window": "10s"
       },
       {

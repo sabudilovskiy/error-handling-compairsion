@@ -4,7 +4,7 @@
   "enable_tracing": true,
   "shutdown_grace_period": "1m",
   "backends": [
-    null
+    "bad_value_6347"
   ],
   "routes": {
     "EP": {

@@ -1,6 +1,6 @@
 {
   "service_name": "RELTPUSCTAPIRHG",
-  "worker_threads": false,
+  "worker_threads": [],
   "enable_tracing": true,
   "shutdown_grace_period": "1m",
   "backends": [

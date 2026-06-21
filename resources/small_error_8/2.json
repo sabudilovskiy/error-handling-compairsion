@@ -20,7 +20,7 @@
       "endpoint_overrides": {
         "ep_34": {
           "address": {
-            "host": null,
+            "host": [],
             "port": 1
           },
           "connect_timeout": "25ms",

@@ -770,7 +770,7 @@
                     "max_attempts": 92,
                     "base_delay": "10ms",
                     "backoff_multiplier": 6533.4433,
-                    "deadline": null
+                    "deadline": false
                   },
                   "endpoint_overrides": {
                     "ep_10": {

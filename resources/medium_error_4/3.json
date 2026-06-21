@@ -80,7 +80,7 @@
           "deadline": "5s"
         },
         "endpoint_overrides": {},
-        "nested": null
+        "nested": []
       }
     }
   },

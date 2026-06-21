@@ -973,7 +973,10 @@ def _collect_at_depth(obj: Any, target: int, cur: int, path: list) -> list[tuple
 
 
 def _wrong_type_value(original: Any, rng: random.Random) -> Any:
-    """Return a value of a different type than original."""
+    """Return a value of a different type than original.
+    None/null is intentionally excluded — it is semantically valid for
+    box<T>, optional<T> and nullable fields and won't trigger parse_error.
+    """
     candidates = []
     if not isinstance(original, str):
         candidates.append(f"bad_value_{rng.randint(1000,9999)}")
@@ -983,8 +986,7 @@ def _wrong_type_value(original: Any, rng: random.Random) -> Any:
         candidates.append([])
     if not isinstance(original, bool):
         candidates.append(rng.random() < 0.5)
-    if original is not None:
-        candidates.append(None)
+    # null omitted: valid for box<T>/optional<T>, won't cause parse_error
     return rng.choice(candidates)
 
 
@@ -1033,10 +1035,26 @@ def _corrupt_raw_json(
         raise ValueError(f"_corrupt_raw_json: no nodes at depth {at}")
 
     if error_kind == "wrong_type":
-        # exclude 'extra' keys — they map to boost::json::value
-        filtered = [(p, par, k) for p, par, k in candidates if k != "extra"]
-        if not filtered:
-            filtered = candidates  # last resort
+        # Prefer primitive-valued leaves (str/int/float/bool).
+        # Replacing a dict with null is unreliable: parsers may accept
+        # null as an empty box<T> and not raise parse_error.
+        # Also exclude 'extra' — it maps to boost::json::value.
+        _PRIMITIVES = (str, int, float, bool)
+        primitive_candidates = [
+            (p, par, k) for p, par, k in candidates
+            if k != "extra" and isinstance(par[k], _PRIMITIVES)
+        ]
+        if primitive_candidates:
+            filtered = primitive_candidates
+        else:
+            # fallback: non-extra, non-dict, non-null
+            filtered = [(p, par, k) for p, par, k in candidates
+                        if k != "extra" and par[k] is not None
+                        and not isinstance(par[k], dict)]
+            if not filtered:
+                filtered = [(p, par, k) for p, par, k in candidates if k != "extra"]
+            if not filtered:
+                filtered = candidates  # absolute last resort
         path, parent, key = rng.choice(filtered)
         original = parent[key]
         parent[key] = _wrong_type_value(original, rng)

@@ -15,7 +15,7 @@
           "connect_timeout": "10s",
           "retry": {
             "max_attempts": 38,
-            "base_delay": null,
+            "base_delay": [],
             "deadline": "5s"
           }
         },

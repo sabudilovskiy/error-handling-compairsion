@@ -100,7 +100,7 @@ function(ccozy_generate_launch_json_file)
     \"stopAtEntry\": false,
     \"cwd\": \"${binary_dir_clean}\",
     \"environment\": [],
-    \"console\": \"externalTerminal\"
+    \"console\": \"integratedTerminal\"
 }"
         )
     else()
