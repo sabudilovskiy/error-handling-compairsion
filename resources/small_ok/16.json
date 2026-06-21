@@ -1,0 +1,7 @@
+{
+  "service_name": "PJNHOANVWIH",
+  "worker_threads": 66,
+  "enable_tracing": true,
+  "shutdown_grace_period": "5s",
+  "routes": {}
+}

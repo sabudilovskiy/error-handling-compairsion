@@ -1,0 +1,7 @@
+{
+  "service_name": "AQXBFHABZVEWLHDKOWLIMILHGLZKHJ",
+  "worker_threads": 202,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "env": {}
+}

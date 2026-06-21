@@ -1,0 +1,97 @@
+{
+  "service_name": "DXMPECCAMRJZYBH",
+  "worker_threads": 133,
+  "enable_tracing": true,
+  "shutdown_grace_period": "30s",
+  "routes": {},
+  "env": {
+    "ZIGF": "UXLCTKVMQHFHPICRJAJ",
+    "YQGN": "JNOFHJIZBCBOUIQRUPWKEVGCNGU",
+    "FLNX": "URGKDBWHIYSTHDKFJOABLWCJXVKAKJKEYUNTV"
+  },
+  "rate_limits": [
+    [
+      "EIMTFKSALBOFLZZLJSDOGNGDBBBX",
+      16867,
+      false
+    ],
+    [
+      "PS",
+      24905,
+      false
+    ],
+    [
+      "YNUGPGHONPBHNOHUNGPGBBIIHQGYHNIEK",
+      5127,
+      false
+    ],
+    [
+      "MUUZWXBPMCNGSFKJVPZUKNQGUZVZIKMPCIUVGBMTEYIVBFWUOSPXMMGZAGFATID",
+      39578,
+      false
+    ],
+    [
+      "BGFVTKRYZPQOAC",
+      3418,
+      false
+    ],
+    [
+      "TYEBLCYQAJLCCROMGZJMHYPMDCDTZLQNNWYOCUGUJPNDZRFLFFWEKPK",
+      25861,
+      false
+    ],
+    [
+      "UJDRDPZWTP",
+      52630,
+      false
+    ],
+    [
+      "HYFUAVBTKROZSJQZOT",
+      61745,
+      true
+    ],
+    [
+      "VKENCTEVZTFJLGSZLVTCCMUFKULKFJATAQYCZL",
+      80725,
+      false
+    ],
+    [
+      "PVSCYDFUPVXHTZVJWMTHPWHJLHXKRUQOZMQMK",
+      28377,
+      true
+    ],
+    [
+      "ROWRTLMMTAE",
+      51130,
+      true
+    ]
+  ],
+  "allowed_origins": [
+    "CYIPHUPTYCEHCJEBFMZSVTRWRIAQHFYDGBKCDIBUJTUWFXEUNE"
+  ],
+  "config_tree": {
+    "scope": "WAXREQNEGJPQCMFFIQMRVJMKFMBNAIVAJZE",
+    "extra": "DTAHH",
+    "log_level": "error",
+    "endpoint_overrides": {},
+    "tags": [
+      {
+        "key": "VWMKFQSGDPTLJUNTXBUGISZVSJZPUKZCHKDVWBTKQPLCFWBPQRTWHBG",
+        "value": "KZTEWJDQQACHTITAXBAPWEGLHXXLJMUTMBFNPCYQQJR"
+      },
+      {
+        "key": "WWNKFGAPNIKYNUNKYTGIIQCAMITJVUETYKCZFTCWGIVGUPYDUK",
+        "value": ""
+      },
+      {
+        "key": "CHQDDZKJSSVEX",
+        "value": "FWXA"
+      }
+    ]
+  },
+  "admin_endpoint": {
+    "host": "SKUKXYTLFFYGBBFV",
+    "port": 61584
+  },
+  "warmup_delay": "10ms"
+}

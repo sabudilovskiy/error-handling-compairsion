@@ -1,0 +1,244 @@
+{
+  "service_name": "PJNHOANVWIHUHAJJKVEXTJA",
+  "worker_threads": 202,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "env": {
+    "TUWJH": "LINZCLPNQUFSJSBJCZAQLHPEJJKOOCFWPXAOPAPWZDOTCPUAEW",
+    "LBRBV": "TKPQVZVUCHKDWCRDHAMUBDXVBYMEUWIHFSAHQHDDU",
+    "NBMOX": "IBBAWGNVIQMDZGDNUDJDONEMHEEMN",
+    "FLVPF": "GVNAPJSJDCYZJXPHRUPGSOQEPRCYUVDXVKBOCZPXYBQKRFDWLMJMCHG",
+    "UA": "MTTGBIUAMUBEVR",
+    "GQZ": "RVUXXIQATTZZQGPSPLEWOXWFDGACLXJUUDEBFTWYWDXYHLGSNCFCOC"
+  },
+  "rate_limits": [
+    [
+      "FYGNBYLDVMNIDTMTGLXOLNALGCGMNZBSGNYXVRKBQMLAUE",
+      41694,
+      false
+    ],
+    [
+      "BMU",
+      84824,
+      true
+    ]
+  ],
+  "allowed_origins": [],
+  "config_tree": {
+    "scope": "GVSJTVSNABDQRAEKTTCSRJOETNJSTZNRCWYETBJIJUWOXKCUIMJUSZPA",
+    "extra": "KMIOJZG",
+    "log_level": "debug",
+    "retry": {
+      "max_attempts": 1,
+      "base_delay": "10ms",
+      "backoff_multiplier": -1624.4472
+    },
+    "nested": {
+      "scope": "XIZYAKFLNSJLYGFUGZXQBRCIAWARDXIGDDPPLAACWIVNDKNTP",
+      "extra": "HTGJFHVFFMXLCEAUGYEYZUNC",
+      "log_level": "warning",
+      "endpoint_overrides": {},
+      "nested": {
+        "scope": "OARALAORNQNSCQEWHRHAF",
+        "extra": "IH",
+        "log_level": "debug",
+        "retry": {
+          "max_attempts": 13,
+          "base_delay": "1s",
+          "backoff_multiplier": -1581.4465,
+          "deadline": "15s"
+        },
+        "endpoint_overrides": {
+          "ep_2": {
+            "address": {
+              "host": "NAGUUNUEAGTTVEASDQGTHMIAOBKXJKWKYHHBQJEWIKLDHCPBJUHIMQEXJQBLMA",
+              "port": 14324
+            },
+            "connect_timeout": "10ms",
+            "retry": {
+              "max_attempts": 32,
+              "base_delay": "10ms",
+              "backoff_multiplier": -5077.6581,
+              "deadline": "5s"
+            },
+            "tags": [
+              {
+                "key": "CSENRFXRTEGTFZGWXYTOQHGENTJBDHZZWZULRZ",
+                "value": "UZVBSDACVVDFEBMNLJ"
+              },
+              {
+                "key": "KWLUTMYXSN",
+                "value": "HRJNWELWDNMPLEMHNSZNSYZUFGNRCYTMRN"
+              },
+              {
+                "key": "HOVKLZOCTYRWFJCDTLYKTQITBYGNDINHV",
+                "value": "CNOHQLILQKOQCHZKXAHCTVOJQLFVLVTUYC"
+              }
+            ],
+            "tls_cert_path": "EEVDLVQMJTGBZKJSZIFLRYJUJUZENNMZAIWTJJX"
+          }
+        },
+        "tags": [
+          {
+            "key": "JRKKZSJBYYOFPRLNGACKPAIBVPZXPULMHSJUMYKMIWKIGCGLJFDQAYNJXYPLLGG",
+            "value": "WFMJWCJPYGUOSBJURHOBRMYXBSDQKCGGMYTOYODTVODAYYZWCLT"
+          },
+          {
+            "key": "YDPICHYNGEPBBJXUSAFAFRDFMMELDRQECACBYTVBAOMAOL",
+            "value": ""
+          },
+          {
+            "key": "RVGBSMZ",
+            "value": "FSYATJXICSLAATXQB"
+          }
+        ],
+        "nested": {
+          "scope": "EVTUSHNOIQVOYMJOJQWAFHQKOVIVIURVEMQDDPOWNFLQHMFCIXVL",
+          "extra": "POBYJQLSFP",
+          "retry": {
+            "max_attempts": 46,
+            "base_delay": "200ms",
+            "deadline": "30s"
+          },
+          "endpoint_overrides": {},
+          "tags": [
+            {
+              "key": "VDZQXWLUUBROLES",
+              "value": "WGYYCQTHBPPEKAEZXCJDOVJBKPSJGGWKDLHAWHRHA"
+            },
+            {
+              "key": "VISTGGTGLSKYXOETHOQFXFJZYVZLFXXTG",
+              "value": "DRNZWKPZKRSLNLUUKTZFOCOPYVCJYGETRDIX"
+            },
+            {
+              "key": "BDXHAJRNUTEAPSBTDJMTNIASXELGW",
+              "value": "CZKDZTZNRRXBIEOKSNOUMNLZVKVNMFJYSWUHPUGGJQLIOXPWCMH"
+            },
+            {
+              "key": "XWTOQQCPILXPBQJOMSNCVQFRODBZLGTOHYSCQAFVFEPNIIA",
+              "value": "BCBLUXF"
+            },
+            {
+              "key": "OEUOVEJCABSMIJJJNNQYOCJAMFTYPWPAMUOQUCAZBFBQMXQAH",
+              "value": "ALIH"
+            },
+            {
+              "key": "NQFSECLPRNPLDWBCNUIYUTVRBLWHQBCNEGGLLLHPU",
+              "value": "SZNTPTOQWVXCCMZUINJAHRZECTQSTXCNGRK"
+            },
+            {
+              "key": "G",
+              "value": "EWFSHBZIILFHARXP"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "global_thresholds": {
+    "LNPRSL": [
+      {
+        "metric_name": "VLSPPHEOPSBNLQIUEEODGEZIPVFXNWBL",
+        "warn_at": 6884.2147,
+        "crit_at": 7736.3411,
+        "evaluation_window": "2m"
+      }
+    ],
+    "BJLFS": [
+      {
+        "metric_name": "PEPVNYSQHOXPCXGPABKTOKWOHCZRKDIXHSSMFRSCWSRQJUTXBIHHUOSVU",
+        "warn_at": -6674.7041,
+        "crit_at": -2657.1444,
+        "evaluation_window": "5s"
+      }
+    ],
+    "VSDZTY": [
+      {
+        "metric_name": "RMQHGYADRHVIHOJWHYWZUMJKRHJVUOTLDJSHYSHFIUDXNTTSBZECVLFD",
+        "warn_at": -8253.0381,
+        "crit_at": 5508.5525,
+        "evaluation_window": "10m"
+      },
+      {
+        "metric_name": "OQRJITGXLRJEAAXTHKHCULOIDCWKAOKXVOTBPJQJSERVWAPNUPXQZMOXVLBBVAR",
+        "warn_at": 9192.1898,
+        "crit_at": -2780.4115,
+        "evaluation_window": "5s"
+      }
+    ],
+    "MYZP": [
+      {
+        "metric_name": "DYP",
+        "warn_at": -6948.3507,
+        "crit_at": -304.7592,
+        "evaluation_window": "5s"
+      }
+    ],
+    "GNZO": [],
+    "CNAN": [
+      {
+        "metric_name": "TMJHOWIGKUD",
+        "warn_at": 4277.0627,
+        "crit_at": -4475.6726,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "SFOEZVUIOQSUYLKOPGEMAHATBXBKYJBBMRRKSLQOTRFISNWGSXYGKGSTR",
+        "warn_at": 9065.5645,
+        "crit_at": -1353.5929,
+        "evaluation_window": "10s"
+      },
+      {
+        "metric_name": "ZJVRFHXMZJJTBNZUUXYUKDCXGCUSWXSIDJBVASDYGNVR",
+        "warn_at": 2973.9016,
+        "crit_at": -383.7157,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "NCTKQIANYDLSNZGELYHWLWERUZAZSKPXYOCKGRZSBTGVWDODUCACSQQOUCZWI",
+        "warn_at": 7355.8878,
+        "crit_at": -8523.8256,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "CRWZXAVBOFBGWDBLBZFOCRZMNJYYDYZ",
+        "warn_at": -6432.6718,
+        "crit_at": 6656.3059,
+        "evaluation_window": "1m"
+      },
+      {
+        "metric_name": "YEISKVEAWMMSNLBHODAELARWBNZCRQLVFHQMRHBUDUGIILSMEGWIDFO",
+        "warn_at": 8220.7028,
+        "crit_at": -766.1547,
+        "evaluation_window": "30s"
+      },
+      {
+        "metric_name": "CLFOZDJMDHKDAMVQIDTFAJVH",
+        "warn_at": 851.4113,
+        "crit_at": 7038.6817,
+        "evaluation_window": "5s"
+      }
+    ],
+    "BP": [
+      {
+        "metric_name": "UHYHEUVHUYTM",
+        "warn_at": 7598.9487,
+        "crit_at": -9825.0314,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "VMNFHPMFK",
+        "warn_at": -1114.6127,
+        "crit_at": -8180.4394,
+        "evaluation_window": "10m"
+      },
+      {
+        "metric_name": "OKRMBQRUZQYOZMSULLYCKQPXTSCSPSEKRUHKKBAFOSIUP",
+        "warn_at": -7288.3083,
+        "crit_at": 8469.3609,
+        "evaluation_window": "5s"
+      }
+    ]
+  },
+  "warmup_delay": "10ms"
+}

@@ -1,0 +1,97 @@
+{
+  "service_name": "CPYIBAEVSPYXLKYAIPZGXNRRVDGSRWZXIVZTVCNKCLZNZIOWDY",
+  "worker_threads": 51,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "routes": {
+    "PGQS": {
+      "pattern": "WZQAULHTNJLSDCQVQGDTVIJXGMPHETGWQAGYFAUKR",
+      "timeout_override": "10ms"
+    },
+    "JEVPB": {
+      "pattern": "TXMDOHZCTVO",
+      "backend_names": []
+    },
+    "JWNCG": {
+      "pattern": "IOPXZFAARDISZLGIQOKQINNTPITPVPPEXMPJUZOKLVFTMWT",
+      "backend_names": [
+        "XZFJRATOBFATYSDVWLLPSBGEITANZZZQPCPHDLLEVUHTKEBUVDWDBUPOXCUAWR",
+        "CFTUIUOPWAZUEGOPYOORIPWSCZJLJLBCQIIIPNOLBWCHTUHRXBXFK",
+        "XYY"
+      ],
+      "timeout_override": "10ms"
+    },
+    "MR": {
+      "pattern": "XPUCECLQ",
+      "timeout_override": "100ms"
+    },
+    "QSM": {
+      "pattern": "HWSWENWFYKHRSAZZSMGYKMQOAMQRVEWHURZXLIVFEFWUEMCBAB",
+      "backend_names": [
+        "RDVLTBBRHZNHYSWJCPCXSBFVODDWFBVAYVXNUWJIO",
+        "UYRZUGISAIQZXXWVKYQCSTUBLLWDHYALWKNVBLEAAKCPAOICVSTI",
+        "RFHVMTNS",
+        "IIEJBGYODZFSDZAQFDESMPPQYWRZZPGUMEYOAKNIKEJLSVLHAYJFC",
+        "HUCGMNEYEQBQQYPLKWSMIUVZCIEBDSTTXEQQDZW"
+      ]
+    },
+    "GL": {
+      "pattern": "XHFFHUEPXOTDXTEOZGSLX",
+      "backend_names": [
+        "CIYABUAPUOKBAIXD",
+        "DXLEYELVYPXMZAREDOLAEVRPICPDMWGZRFOKIZR"
+      ],
+      "timeout_override": "100ms"
+    },
+    "WYBQXH": {
+      "pattern": "TAQPRRIFBKAGSJGEIBIXJWLGWXFTACLSFLFPUHPMRT",
+      "backend_names": [
+        "NBSTG",
+        "UBPVUQQIQIULJZNXL",
+        "NUFIBUQKVQBCVDBONRCFVILACIWJLMMSWWCXDJZPOXIJHYAB"
+      ],
+      "timeout_override": "10ms"
+    },
+    "UUXA": {
+      "pattern": "ZERDAM",
+      "backend_names": [
+        "YFEEDAZGTKNWPTSPOKTOGZFRDHVEMHSLOSYUISTGSHXANH",
+        "DUBKLZPUINMJLQWSLSBNUSFJJSVPHDOSFLSN",
+        "KCONPADTCPNUBUAXQQLLFFPRCMSTD",
+        "HTXRITQZIZMLWATLNJFPZLBARZGAYBAPUDRNPKPGGLEDGBHINHLP",
+        "YUXIGXRBQGGMQBVNUAUCXCD",
+        "GQYDQSSPKVFOGYYAHKGRSJETAAJDMQGVGXNRTRUYTP",
+        "TRFEVTGUWJNJWMVBOGGJHXNLYBUKLXLMNLQNJZETUTIUGTOQFURAECH",
+        "AGRJBRBPMDLKEJRASIZYEIUKCXUQT",
+        "TAHJTGG",
+        "ATLZKGSYNMZSXBBFURTHQHJFIFTLLJSYHFCESZROBDCRBLLOMIQYHNSSNKUOMZ",
+        "HBXCNVQMDTQOKSTVFDWCDGGPVXHZRALUFBBMAJ"
+      ],
+      "timeout_override": "100ms"
+    }
+  },
+  "env": {
+    "AAP": "VLHEOMNRHKWUGYDZUMOXVBGJSSUIRXDSIHUYKYTLJI",
+    "OLGD": "ZICHLQWBCXDFAQKANBEGADIFGHYDSGWUAWXKU"
+  },
+  "rate_limits": [
+    [
+      "VFOETYNIBSSMJZTPUUTYZZW",
+      63107,
+      false
+    ]
+  ],
+  "config_tree": {
+    "scope": "EAGJDEUASZXLLDWXRGL",
+    "extra": "KYXDGIZDOSNDKLVHANIWDFABVAAKCOBEIIXJHHHK",
+    "log_level": "warning"
+  },
+  "admin_endpoint": {
+    "host": "QMRPMKEQCEIHBHXKAMLUKWFOGZDKX",
+    "port": 51486
+  },
+  "global_thresholds": {
+    "FP": [],
+    "AOOXRV": []
+  }
+}

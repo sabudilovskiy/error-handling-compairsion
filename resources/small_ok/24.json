@@ -1,0 +1,15 @@
+{
+  "service_name": "SFGFGFVVCWYEZWJXYAOOXU",
+  "worker_threads": 1,
+  "enable_tracing": false,
+  "shutdown_grace_period": "10m",
+  "allowed_origins": [],
+  "admin_endpoint": {
+    "host": "JCRULVBGKK",
+    "port": 46948
+  },
+  "global_thresholds": {
+    "ZEPJIR": []
+  },
+  "warmup_delay": "25ms"
+}

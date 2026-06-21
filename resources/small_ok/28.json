@@ -1,0 +1,15 @@
+{
+  "service_name": "ERT",
+  "worker_threads": 93,
+  "enable_tracing": true,
+  "shutdown_grace_period": "15s",
+  "env": {
+    "TGG": ""
+  },
+  "rate_limits": [],
+  "admin_endpoint": {
+    "host": "QQWXVZITHVOEGAYJUVICQRIXDSNF",
+    "port": 542
+  },
+  "global_thresholds": {}
+}

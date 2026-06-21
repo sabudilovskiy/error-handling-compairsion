@@ -1,0 +1,20 @@
+{
+  "service_name": "VVZFUHVE",
+  "worker_threads": 222,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "backends": [],
+  "env": {
+    "AIECZZ": "IOXNEZILHPYRSNVLNUKUDLTZUIWO"
+  },
+  "allowed_origins": [],
+  "admin_endpoint": {
+    "host": "QLILOI",
+    "port": 39681
+  },
+  "global_thresholds": {
+    "RHSHG": [],
+    "UUOMA": []
+  },
+  "warmup_delay": "10ms"
+}

@@ -1,0 +1,26 @@
+{
+  "service_name": "NPSAGOPIUZFBQPKCHX",
+  "worker_threads": 255,
+  "enable_tracing": true,
+  "shutdown_grace_period": "2m",
+  "routes": {
+    "OFVJ": {
+      "pattern": "EOYHOTMBSAHEGJRLYHKVR"
+    }
+  },
+  "env": {},
+  "config_tree": {
+    "scope": "J",
+    "extra": "VCRCEMSLTEDYYDOFZGLNNOHVIE",
+    "retry": {
+      "max_attempts": 12,
+      "base_delay": "25ms",
+      "backoff_multiplier": 2974.4966
+    },
+    "nested": {
+      "scope": "ARWBKKHCIOMSF",
+      "extra": "PVHXQIQPTPCF"
+    }
+  },
+  "warmup_delay": "10ms"
+}

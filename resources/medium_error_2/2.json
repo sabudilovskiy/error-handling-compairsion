@@ -1,0 +1,15 @@
+{
+  "service_name": "RELTPUS",
+  "worker_threads": 17,
+  "enable_tracing": true,
+  "shutdown_grace_period": "1m",
+  "backends": [
+    "bad_value_6347"
+  ],
+  "routes": {
+    "EP": {
+      "pattern": "VNYUJN",
+      "timeout_override": "10ms"
+    }
+  }
+}

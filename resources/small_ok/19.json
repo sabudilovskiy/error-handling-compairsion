@@ -1,0 +1,10 @@
+{
+  "service_name": "ZQDQGMLQJSETIDINKIDYK",
+  "worker_threads": 185,
+  "enable_tracing": true,
+  "shutdown_grace_period": "10s",
+  "env": {},
+  "allowed_origins": [
+    ""
+  ]
+}

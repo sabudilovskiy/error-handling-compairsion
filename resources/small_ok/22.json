@@ -1,0 +1,12 @@
+{
+  "service_name": "EHATOFWDXULZCHIBKTFRVXNWBSASIJ",
+  "worker_threads": 20,
+  "enable_tracing": true,
+  "shutdown_grace_period": "5s",
+  "allowed_origins": [],
+  "admin_endpoint": {
+    "host": "YUQEIIVWFNBK",
+    "port": 9858
+  },
+  "global_thresholds": {}
+}

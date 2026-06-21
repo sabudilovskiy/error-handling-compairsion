@@ -1,0 +1,105 @@
+{
+  "service_name": "WYU",
+  "worker_threads": 135,
+  "enable_tracing": true,
+  "shutdown_grace_period": "30s",
+  "backends": [
+    {
+      "name": "OVMMYDIHKLZILZ",
+      "endpoints": [],
+      "min_log_level": "critical",
+      "alerts": {}
+    },
+    {
+      "name": "DTKACIGMMSOTDUVDSSUU",
+      "endpoints": [
+        {
+          "address": {
+            "host": "XPQVGIOTGPZJQIDDCIIDAFXNDVQ",
+            "port": 38400
+          },
+          "connect_timeout": "10ms",
+          "retry": {
+            "max_attempts": 97,
+            "base_delay": "10ms",
+            "backoff_multiplier": -3809.5077
+          }
+        },
+        {
+          "address": {
+            "host": "OTPCSEPWISOA",
+            "port": 54089
+          },
+          "connect_timeout": "10ms",
+          "retry": {
+            "max_attempts": 98,
+            "base_delay": "10ms",
+            "deadline": "5s"
+          },
+          "tags": [],
+          "tls_cert_path": "ZIDMDBGJAASQJQZLI"
+        },
+        {
+          "address": {
+            "host": "YGAHIQIFHGTVKJXYLBRTXZYFQUGLPM",
+            "port": 16048
+          },
+          "connect_timeout": "10ms",
+          "retry": {
+            "max_attempts": 55,
+            "base_delay": "5s"
+          },
+          "tags": []
+        }
+      ],
+      "min_log_level": "debug",
+      "alerts": {
+        "BWE": {
+          "metric_name": "POERMB",
+          "warn_at": 5701.8936,
+          "crit_at": -4864.377,
+          "evaluation_window": "5s"
+        }
+      },
+      "fallback_retry": {
+        "max_attempts": 23,
+        "base_delay": "10ms",
+        "deadline": "15s"
+      }
+    },
+    {
+      "name": "VLTVRWBSNOIPKCLBVUUR",
+      "endpoints": [],
+      "min_log_level": "debug"
+    }
+  ],
+  "rate_limits": [],
+  "allowed_origins": [
+    "SEAOOZPWQAJC"
+  ],
+  "config_tree": {
+    "scope": "UQARZHXALDDMMOJLXKAIE",
+    "extra": "SZYWJGQSO",
+    "log_level": "debug",
+    "endpoint_overrides": {
+      "ep_77": {
+        "address": {
+          "host": "VYNGZAMWPHMQD",
+          "port": 49819
+        },
+        "connect_timeout": "1s",
+        "retry": {
+          "max_attempts": 20,
+          "base_delay": "1s",
+          "backoff_multiplier": 5827.167
+        },
+        "tls_cert_path": "ZVTUJY"
+      }
+    }
+  },
+  "admin_endpoint": {
+    "host": "WF",
+    "port": 47057
+  },
+  "warmup_delay": "10ms"
+}

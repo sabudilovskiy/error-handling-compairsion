@@ -1,0 +1,7 @@
+{
+  "service_name": "CPYIBAEVSPYXLKYAIPZGXNRRV",
+  "worker_threads": 1,
+  "enable_tracing": false,
+  "shutdown_grace_period": "15s",
+  "rate_limits": []
+}

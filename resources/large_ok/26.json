@@ -1,0 +1,99 @@
+{
+  "service_name": "GVGNTRBEYYPBXVTQFUNHXNWGZWAVHEEGTPYMLHSAAXJRRDQ",
+  "worker_threads": 12,
+  "enable_tracing": true,
+  "shutdown_grace_period": "10s",
+  "backends": [],
+  "env": {},
+  "rate_limits": [],
+  "allowed_origins": [],
+  "config_tree": {
+    "scope": "QEBDCERRWYBBNGLTYCRKDNZBNWO",
+    "extra": "BLDVHZCEVILZYTYVWNLQPTMWBBESAQDTWPBSF",
+    "retry": {
+      "max_attempts": 2,
+      "base_delay": "10ms",
+      "backoff_multiplier": -1438.1222,
+      "deadline": "5s"
+    },
+    "endpoint_overrides": {
+      "ep_5": {
+        "address": {
+          "host": "VNRAZIPKUURXMADDGOHJHETQMMTZKWCQUCXEWBAEMHKCGIKNPGVPHAQW",
+          "port": 6571
+        },
+        "connect_timeout": "10ms",
+        "retry": {
+          "max_attempts": 21,
+          "base_delay": "10ms",
+          "backoff_multiplier": -7313.559
+        },
+        "tls_cert_path": "FQBBMPRDNX"
+      },
+      "ep_44": {
+        "address": {
+          "host": "BRAJINGVQO",
+          "port": 53705
+        },
+        "connect_timeout": "200ms",
+        "retry": {
+          "max_attempts": 33,
+          "base_delay": "10ms",
+          "deadline": "15s"
+        },
+        "tls_cert_path": "BIMBYBTZJFTJHHSIQWNWTATWKYGOJD"
+      }
+    },
+    "nested": {
+      "scope": "BXVTYSZZCEMVUWCYWWLDPMPYUGYNITIYDUZPUCLOHIEWDJYRHXVSL",
+      "extra": "PBSYTODOPJHWOXOPGFCICTHSXVZGYBDIYVUHSODFZLSNONQGIGVDWTYERMJPUCO",
+      "retry": {
+        "max_attempts": 4,
+        "base_delay": "10ms",
+        "backoff_multiplier": 7107.2926
+      },
+      "endpoint_overrides": {},
+      "tags": [
+        {
+          "key": "WSVAVKXYNWAXALFXLLHSEQBXSQLNRCYEXAHQWTPPFZESRDZYMMIBWJN",
+          "value": "PSMSGBOIFYUHEZELSALRPTDFLLZYKUMPIJNKN"
+        }
+      ]
+    }
+  },
+  "admin_endpoint": {
+    "host": "URIMIPPLWJVSBLMSIZVFVHTGPVGCCTLEGPKBWWPI",
+    "port": 53437
+  },
+  "global_thresholds": {
+    "RVB": [
+      {
+        "metric_name": "RBXWKKGLMNTJBCCVKLSZCOQAIARUIDIYOLJOJOKJIUFJIPTATLDCZLBCWBWYM",
+        "warn_at": -5301.3187,
+        "crit_at": 4183.0368,
+        "evaluation_window": "10s"
+      },
+      {
+        "metric_name": "YSQRVHPJPDZJSFCAUDAJESVETV",
+        "warn_at": -3248.1201,
+        "crit_at": 9874.6844,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "BQJVVORHGQG",
+        "warn_at": 1185.4475,
+        "crit_at": -6329.9912,
+        "evaluation_window": "15s"
+      }
+    ],
+    "NS": [
+      {
+        "metric_name": "NLF",
+        "warn_at": -4798.6909,
+        "crit_at": 5757.5427,
+        "evaluation_window": "5s"
+      }
+    ]
+  },
+  "warmup_delay": "10ms"
+}

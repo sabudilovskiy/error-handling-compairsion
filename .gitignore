@@ -2,3 +2,5 @@ build*
 CMakePresets*
 .vscode
 .claude
+.clangd
+utils/data

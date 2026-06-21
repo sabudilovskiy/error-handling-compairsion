@@ -1,0 +1,16 @@
+{
+  "service_name": "MEGWBCE",
+  "worker_threads": 4,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "allowed_origins": [],
+  "config_tree": {
+    "scope": "AWIQNPM",
+    "extra": "VIDCMTMDVBKHWCPUQGSZETC",
+    "retry": {
+      "max_attempts": 35,
+      "base_delay": "10ms"
+    }
+  },
+  "warmup_delay": "50ms"
+}

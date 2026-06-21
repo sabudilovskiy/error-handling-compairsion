@@ -1,0 +1,109 @@
+{
+  "service_name": "PJNHOANVWIH",
+  "worker_threads": 162,
+  "enable_tracing": true,
+  "shutdown_grace_period": "5s",
+  "backends": [
+    {
+      "name": "JAZHTIAEZTVUAOOTUWJHZJL",
+      "endpoints": [
+        {
+          "address": {
+            "host": "LPNQUFSJSBJCZAQLHPEJJKOOC",
+            "port": 10765
+          },
+          "connect_timeout": "25ms",
+          "retry": {
+            "max_attempts": 85,
+            "base_delay": "10ms",
+            "deadline": "1m"
+          },
+          "tls_cert_path": "CPUAEWHMLBRBVUMTKPQVZVUCHK"
+        },
+        {
+          "address": {
+            "host": "DH",
+            "port": 599
+          },
+          "connect_timeout": "50ms",
+          "retry": {
+            "max_attempts": 91,
+            "base_delay": "10ms"
+          },
+          "tls_cert_path": "IHFSAHQHDDUEIMNBMOXO"
+        }
+      ],
+      "min_log_level": "debug",
+      "alerts": {}
+    },
+    {
+      "name": "MDZGDNUDJDONEMHEEMNQHMFLVPFNGV",
+      "endpoints": [],
+      "min_log_level": "debug"
+    }
+  ],
+  "config_tree": {
+    "scope": "GSOQEPRCYUVDXVKBOCZP",
+    "extra": "BQKRFDWLMJMCHGOGWAUAHKM",
+    "retry": {
+      "max_attempts": 27,
+      "base_delay": "50ms",
+      "backoff_multiplier": -8846.8089
+    },
+    "nested": {
+      "scope": "URVUXXIQATTZZQGPSPLEWOXWF",
+      "extra": "ACL",
+      "nested": {
+        "scope": "TWYWD",
+        "extra": "YHLGSNCFCOCBSEEVXYFYGNB",
+        "retry": {
+          "max_attempts": 86,
+          "base_delay": "10ms",
+          "backoff_multiplier": -2335.0379,
+          "deadline": "30s"
+        },
+        "endpoint_overrides": {
+          "ep_25": {
+            "address": {
+              "host": "GMNZBSGNYXVRKBQMLAUENHKFMB",
+              "port": 24650
+            },
+            "connect_timeout": "2s",
+            "retry": {
+              "max_attempts": 64,
+              "base_delay": "200ms",
+              "deadline": "2m"
+            },
+            "tags": []
+          }
+        },
+        "tags": []
+      }
+    }
+  },
+  "global_thresholds": {
+    "RAEKTT": [
+      {
+        "metric_name": "OETNJSTZNRCWYETBJ",
+        "warn_at": -4748.5721,
+        "crit_at": 3055.0568,
+        "evaluation_window": "15s"
+      }
+    ],
+    "MJUS": [],
+    "KM": [
+      {
+        "metric_name": "JZGIAPWAXGCZNESHKNSYDXIZYAK",
+        "warn_at": 9462.6956,
+        "crit_at": -2527.6364,
+        "evaluation_window": "10s"
+      },
+      {
+        "metric_name": "UGZXQB",
+        "warn_at": 657.5139,
+        "crit_at": -4432.6137,
+        "evaluation_window": "15s"
+      }
+    ]
+  }
+}

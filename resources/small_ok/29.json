@@ -1,0 +1,7 @@
+{
+  "service_name": "LTTJCQLMNABDOUHZL",
+  "worker_threads": 1,
+  "enable_tracing": true,
+  "shutdown_grace_period": "5m",
+  "env": {}
+}

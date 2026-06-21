@@ -1,0 +1,11 @@
+{
+  "service_name": "WIJGCCIRKILMFHHPCXUS",
+  "worker_threads": 72,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "routes": {},
+  "admin_endpoint": {
+    "host": "TUHWQEDMYJXZBYVQCFOWEIRBFUAOYE",
+    "port": 2723
+  }
+}

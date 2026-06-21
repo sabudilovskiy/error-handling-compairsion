@@ -1,0 +1,42 @@
+{
+  "service_name": "VQVLEMALPIUZOWT",
+  "worker_threads": 59,
+  "enable_tracing": true,
+  "shutdown_grace_period": "10s",
+  "routes": {
+    "BSG": {
+      "pattern": "VK"
+    },
+    "VQ": {
+      "pattern": "NODVNER",
+      "backend_names": [],
+      "timeout_override": "100ms"
+    },
+    "QCM": {
+      "pattern": "VTPPTMRAUXCGZVILLWM",
+      "timeout_override": "10ms"
+    },
+    "SZYQFA": {
+      "pattern": "NBQAHVNBMGYT",
+      "backend_names": [],
+      "timeout_override": "100ms"
+    },
+    "PLTU": {
+      "pattern": "QOLGKJOPWPHFORLFGYXHTAI"
+    },
+    "QB": {
+      "pattern": "DLRQEAK"
+    },
+    "HZ": {
+      "pattern": "PPULIVOXFOJTBIKQ"
+    }
+  },
+  "allowed_origins": [
+    ""
+  ],
+  "config_tree": {
+    "scope": "GNPB",
+    "extra": "TXIYBNNSCMZGSRLLU",
+    "endpoint_overrides": {}
+  }
+}

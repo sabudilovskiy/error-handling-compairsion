@@ -1,0 +1,33 @@
+{
+  "service_name": "JCASJNMQLEXGIOAHTOADCWPNAQUXN",
+  "worker_threads": 92,
+  "enable_tracing": true,
+  "shutdown_grace_period": "30s",
+  "allowed_origins": [],
+  "config_tree": {
+    "scope": "VKSCPFWPSZOVUFFZFR",
+    "extra": "QGSDCDNBSI",
+    "retry": {
+      "max_attempts": 59,
+      "base_delay": "10ms"
+    },
+    "nested": {
+      "scope": "TZDW",
+      "extra": "PHKREXSDMFOBBUNMAFZHVAHZX",
+      "nested": {
+        "scope": "MPGBCIORGYOJGCDRQUFWRRHIDNFAOYK",
+        "extra": "NFTWZNCWUXHRJNNJYRTRB",
+        "retry": {
+          "max_attempts": 63,
+          "base_delay": "10ms"
+        },
+        "endpoint_overrides": {},
+        "tags": []
+      }
+    }
+  },
+  "admin_endpoint": {
+    "host": "PZOWIAKMAZEXMGZVA",
+    "port": 11349
+  }
+}

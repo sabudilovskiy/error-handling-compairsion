@@ -1,0 +1,9 @@
+{
+  "service_name": "EMUBCRDLSB",
+  "worker_threads": 192,
+  "enable_tracing": true,
+  "shutdown_grace_period": "5s",
+  "rate_limits": [],
+  "global_thresholds": {},
+  "warmup_delay": "10ms"
+}

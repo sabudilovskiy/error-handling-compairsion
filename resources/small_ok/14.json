@@ -1,0 +1,7 @@
+{
+  "service_name": "WYU",
+  "worker_threads": 38,
+  "enable_tracing": true,
+  "shutdown_grace_period": "30s",
+  "routes": {}
+}

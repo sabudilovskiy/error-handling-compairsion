@@ -1,0 +1,75 @@
+{
+  "service_name": "ZJLJFYWWRVIDAHMX",
+  "worker_threads": 19,
+  "enable_tracing": false,
+  "shutdown_grace_period": "1m",
+  "rate_limits": [],
+  "allowed_origins": [],
+  "config_tree": {
+    "scope": "RRZVGKRDWUCJNCQPUTEVZNQKANLS",
+    "extra": "Y",
+    "retry": {
+      "max_attempts": 11,
+      "base_delay": "50ms",
+      "backoff_multiplier": -866.6886,
+      "deadline": "5s"
+    },
+    "nested": {
+      "scope": "IG",
+      "extra": "RRREIVJLKFKDSSZIKABYLAO",
+      "endpoint_overrides": {
+        "ep_34": {
+          "address": {
+            "host": "WP",
+            "port": 1
+          },
+          "connect_timeout": "25ms",
+          "retry": {
+            "max_attempts": 32,
+            "base_delay": "10ms"
+          }
+        },
+        "ep_33": {
+          "address": {
+            "host": "VDGBRJZKZKBFNCWYJIVMPCRCRUHHRI",
+            "port": 12523
+          },
+          "connect_timeout": "500ms",
+          "retry": {
+            "max_attempts": 1,
+            "base_delay": "2s"
+          }
+        }
+      },
+      "tags": [],
+      "nested": {
+        "scope": "_pad_2",
+        "extra": "",
+        "nested": {
+          "scope": "_pad_3",
+          "extra": "",
+          "nested": {
+            "scope": "_pad_4",
+            "extra": "",
+            "nested": {
+              "scope": "_pad_5",
+              "extra": "",
+              "nested": {
+                "scope": "_pad_6",
+                "extra": "",
+                "nested": {
+                  "scope": "_pad_7",
+                  "extra": "",
+                  "nested": {
+                    "scope": 3294,
+                    "extra": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

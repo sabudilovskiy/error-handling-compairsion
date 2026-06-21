@@ -1,0 +1,13 @@
+{
+  "service_name": "WNUJP",
+  "worker_threads": 153,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "routes": {},
+  "rate_limits": [],
+  "config_tree": {
+    "scope": "HWBNXYNTOBKRPWDULAEXCDZA",
+    "extra": "RXKMPEFVBPHCYG"
+  },
+  "warmup_delay": "25ms"
+}

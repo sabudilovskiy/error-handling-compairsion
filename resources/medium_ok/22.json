@@ -1,0 +1,14 @@
+{
+  "service_name": "EHATOFWDXULZCHIBKTFRVXNWBSASIJ",
+  "worker_threads": 108,
+  "enable_tracing": true,
+  "shutdown_grace_period": "5s",
+  "allowed_origins": [
+    "FMJYUQEIIV"
+  ],
+  "admin_endpoint": {
+    "host": "NIQJQNMVFJSLMSAJSTRRQNYVQNCC",
+    "port": 65304
+  },
+  "global_thresholds": {}
+}
