@@ -1,0 +1,188 @@
+{
+  "service_name": "RELTPUSCTAPIRHG",
+  "worker_threads": 254,
+  "enable_tracing": true,
+  "shutdown_grace_period": "1m",
+  "backends": [
+    {
+      "name": "UEQMXAVYC",
+      "endpoints": [
+        {
+          "address": {
+            "host": "BJYAIPTXMWZNMXZSOELDBEPGIVNYUJNQMSLRSNSHKVAITVWFWKRSSDWUGUSIJ",
+            "port": 8155
+          },
+          "connect_timeout": "25ms",
+          "retry": {
+            "max_attempts": 64,
+            "base_delay": "25ms",
+            "backoff_multiplier": -8667.7597
+          },
+          "tags": [
+            {
+              "key": "DBTTYBMWSKRIQHBJACDTRBGNJT",
+              "value": "WBKKLEMMOQMUTVRD"
+            },
+            {
+              "key": "QINUXWHJNIQJRKAZNSKAMTSUEBUUKOLVLTWIXPASBVALIUOJSTKFLFKYLTIJ",
+              "value": "DYASVXEJQHUZIHKFVNUWDDTKKVHOZFCKXUGSOIHZDBQGKZSFIK"
+            }
+          ],
+          "tls_cert_path": "LSENJQZIOLUNJNSNBNEGAPTQNRWHBXOYVXQJRKHCSJDZHBBZWQG"
+        }
+      ],
+      "min_log_level": "error",
+      "alerts": {
+        "FQ": {
+          "metric_name": "VAQRNBTDKEIRPZZBLHG",
+          "warn_at": -7555.5795,
+          "crit_at": 7752.7523,
+          "evaluation_window": "5s"
+        },
+        "ZEAP": {
+          "metric_name": "MBYIHITQQNBPKYABYEBDBCPBWCQQPKFKCLMUMSJL",
+          "warn_at": -4701.3907,
+          "crit_at": 9760.4551,
+          "evaluation_window": "5s"
+        },
+        "WX": {
+          "metric_name": "CSFBLOTUZRMUZBTNBLUPYWKN",
+          "warn_at": 9005.7806,
+          "crit_at": -1634.1419,
+          "evaluation_window": "5s"
+        },
+        "WSCZ": {
+          "metric_name": "NEAKLRZIDOWDXVQZMVDXKSRDZSW",
+          "warn_at": -9901.9744,
+          "crit_at": -7129.6328,
+          "evaluation_window": "30s"
+        },
+        "SD": {
+          "metric_name": "MFAKDADVPWJSJZCBYSQQWHDRXDRBRKSFCHFUHOTWYM",
+          "warn_at": -4942.0793,
+          "crit_at": 1989.0707,
+          "evaluation_window": "5m"
+        },
+        "MQ": {
+          "metric_name": "NXFNWSYSVQVPEUM",
+          "warn_at": 7948.0259,
+          "crit_at": -7013.452,
+          "evaluation_window": "5s"
+        },
+        "OSXFEI": true,
+        "UWY": {
+          "metric_name": "GIHGYIEFTWVBIFBKFNCXZCDCIJBLOSXVKAAKKNMPCGU",
+          "warn_at": 1702.1079,
+          "crit_at": 9106.7461,
+          "evaluation_window": "5s"
+        },
+        "IC": {
+          "metric_name": "DOQIDQWLVYLYOJVVVUZIDYKVSRQDVPQLBWJVXSXFUU",
+          "warn_at": 4603.9894,
+          "crit_at": -7009.1617,
+          "evaluation_window": "5s"
+        }
+      },
+      "fallback_retry": {
+        "max_attempts": 11,
+        "base_delay": "25ms",
+        "deadline": "15s"
+      }
+    },
+    {
+      "name": "FOPJZFWCDWFYRRSXMLD",
+      "endpoints": [
+        {
+          "address": {
+            "host": "EBPQIHWYQLKMORZYCLPDEISD",
+            "port": 44661
+          },
+          "connect_timeout": "25ms",
+          "retry": {
+            "max_attempts": 91,
+            "base_delay": "10ms",
+            "backoff_multiplier": 1341.8353,
+            "deadline": "5s"
+          },
+          "tls_cert_path": "MZGRQFSFGILZJAZONMKRSJUPQVWJVPATGXUADY"
+        }
+      ],
+      "min_log_level": "info",
+      "alerts": {
+        "GGZQG": {
+          "metric_name": "QU",
+          "warn_at": 8934.6109,
+          "crit_at": -7768.5281,
+          "evaluation_window": "5s"
+        },
+        "EOZ": {
+          "metric_name": "BALTH",
+          "warn_at": 119.0779,
+          "crit_at": -28.0357,
+          "evaluation_window": "5s"
+        },
+        "LWWE": {
+          "metric_name": "TYBWC",
+          "warn_at": 4794.393,
+          "crit_at": -3128.1427,
+          "evaluation_window": "1m"
+        }
+      }
+    },
+    {
+      "name": "PKDZBNCGWFMPPWCRNGUPJAOOYWMOFOBXILLOQLTMHAZGIZLE",
+      "endpoints": [],
+      "min_log_level": "critical",
+      "alerts": {
+        "SMQ": {
+          "metric_name": "AEDTFOPFBA",
+          "warn_at": -1937.8457,
+          "crit_at": -3642.871,
+          "evaluation_window": "5s"
+        },
+        "MBM": {
+          "metric_name": "HHDMPGFKTDLDTBZXJIZOZJPHRIAKULK",
+          "warn_at": -8125.6825,
+          "crit_at": 3647.9727,
+          "evaluation_window": "10m"
+        },
+        "DA": {
+          "metric_name": "AFQBPBGUQKGYPKZPLVBMJYTUMCJFNDQMRKRVYMFXXMR",
+          "warn_at": -2815.2719,
+          "crit_at": -6321.4291,
+          "evaluation_window": "1m"
+        },
+        "YWPLI": {
+          "metric_name": "QXYTWWMPBEFWYAOCYWVVDKHTZUBTBOOXUKLACGMZDKSJDOCUGHWB",
+          "warn_at": 9552.8975,
+          "crit_at": 8708.9826,
+          "evaluation_window": "5s"
+        }
+      },
+      "fallback_retry": {
+        "max_attempts": 29,
+        "base_delay": "10ms",
+        "deadline": "10s"
+      }
+    }
+  ],
+  "routes": {},
+  "rate_limits": [
+    [
+      "ZD",
+      59815,
+      false
+    ],
+    [
+      "ICDOMHVTDUPYVWLMTVOYDJTOMGDRAOJXUCKLGPYCRVXLNZUCTQGHLBKHNOCI",
+      21788,
+      true
+    ]
+  ],
+  "allowed_origins": [],
+  "admin_endpoint": {
+    "host": "RNLGTNPYNPSBJAFDAXEJQQBUPBGXGIPNBLOXGXZJEDOJNOCGEPYZWJMZULF",
+    "port": 28265
+  },
+  "warmup_delay": "1m"
+}

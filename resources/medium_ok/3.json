@@ -1,0 +1,19 @@
+{
+  "service_name": "RELTPUS",
+  "worker_threads": 17,
+  "enable_tracing": true,
+  "shutdown_grace_period": "1m",
+  "backends": [
+    {
+      "name": "PRRPMUEHUEQMXAVYCFYSBJYAIPTXMWZ",
+      "endpoints": [],
+      "min_log_level": "error"
+    }
+  ],
+  "routes": {
+    "EP": {
+      "pattern": "VNYUJN",
+      "timeout_override": "10ms"
+    }
+  }
+}

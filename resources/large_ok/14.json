@@ -1,0 +1,357 @@
+{
+  "service_name": "WYUQHI",
+  "worker_threads": 188,
+  "enable_tracing": true,
+  "shutdown_grace_period": "5s",
+  "backends": [
+    {
+      "name": "MYDIHKLZILZUUQEFRVVIFAUCDTKACIGMMSOTDUVDSSUULFDXPQVGIOT",
+      "endpoints": [
+        {
+          "address": {
+            "host": "QIDDCIIDAFXNDVQSCNPVFRMOJPONNTDIPMHOTPCSEPWISOAWMNA",
+            "port": 22773
+          },
+          "connect_timeout": "50ms",
+          "retry": {
+            "max_attempts": 93,
+            "base_delay": "10ms",
+            "backoff_multiplier": -6225.7883,
+            "deadline": "5s"
+          },
+          "tags": [
+            {
+              "key": "JA",
+              "value": "SQJQZLIDBEYGAHIQIFHGTVKJXYLBRTXZYFQUGLPMHMRRYKPTBHUNPYKCIZDEGB"
+            },
+            {
+              "key": "IPOERMBZD",
+              "value": "LRNNEOHCEZXFEAVH"
+            }
+          ]
+        }
+      ],
+      "min_log_level": "critical",
+      "alerts": {
+        "SN": {
+          "metric_name": "PKCLBVUURDCNDBUFCAZVJBEMSEAOO",
+          "warn_at": 5685.2332,
+          "crit_at": -94.1626,
+          "evaluation_window": "10s"
+        },
+        "HJVS": {
+          "metric_name": "ARZHXALDDMMOJLXKAIEJSZYWJGQSOAUCOKSMZTNIV",
+          "warn_at": 5267.8272,
+          "crit_at": 9524.2032,
+          "evaluation_window": "10m"
+        }
+      },
+      "fallback_retry": {
+        "max_attempts": 71,
+        "base_delay": "10ms"
+      }
+    }
+  ],
+  "env": {},
+  "rate_limits": [],
+  "allowed_origins": [
+    "EOG",
+    "GQSUJDPUMAPRKNKJRKRCZUAKCHFGOIOPWMYMAMSHW",
+    "GVZ",
+    "J",
+    "LVXFEZAGQYCESHJMSPTZLFLHRULKQNDABJIFJGZZ",
+    "PDCYXCRSHHDEPRPKMQCUVLDQKIFOPWYDULBROKAYBRMGHRDLQWZFINBFYCNUKPG",
+    "TSGYV",
+    "WNEYRRYWNJWHZJGFWUDIHQUBGEGMIDHHAGXVVYJBIRHHKEHBZIFARNUQIPOY",
+    "XHMJTODMYDOYTYZCWRHBSRGRRYSMGRCE",
+    "YNOHXCUCWWFWLOWGMDTLPGYVLKPRJBFTUOEIPJRBE",
+    "ZNWZOKLMSPWXIMILFAEXJDPXUPVBHP"
+  ],
+  "config_tree": {
+    "scope": "YFTGWFMBGJEBKKCQGADXCRYAYH",
+    "extra": "EBKKSTZNTNTAURPABADWNGTTAZUEDJKABRX",
+    "log_level": "error",
+    "endpoint_overrides": {
+      "ep_35": {
+        "address": {
+          "host": "PNGPVXZGQFZTPHIPFBCVMKPFFZSQNKUJNYRKABLBRQZHARABKCQY",
+          "port": 52219
+        },
+        "connect_timeout": "10ms",
+        "retry": {
+          "max_attempts": 34,
+          "base_delay": "25ms",
+          "backoff_multiplier": 1460.5069,
+          "deadline": "5s"
+        },
+        "tags": []
+      },
+      "ep_26": {
+        "address": {
+          "host": "WLUCTJUQIVRJOHBXTUO",
+          "port": 7215
+        },
+        "connect_timeout": "2s",
+        "retry": {
+          "max_attempts": 38,
+          "base_delay": "10ms",
+          "deadline": "15s"
+        },
+        "tags": [],
+        "tls_cert_path": "PWOYBI"
+      },
+      "ep_71": {
+        "address": {
+          "host": "REKRWJIVPCDOPYIAJU",
+          "port": 61617
+        },
+        "connect_timeout": "10ms",
+        "retry": {
+          "max_attempts": 86,
+          "base_delay": "200ms",
+          "backoff_multiplier": -8288.2419,
+          "deadline": "2m"
+        }
+      }
+    },
+    "tags": [],
+    "nested": {
+      "scope": "MIMNKDDRQPKDHNFMOASXZXVYIZYLTWJPNXMIIOZMFJXYGONXMVR",
+      "extra": "IFBPJEDQHBYAXFSDSEDRHPWGSFWGBPKEASZW",
+      "log_level": "critical",
+      "retry": {
+        "max_attempts": 10,
+        "base_delay": "10ms",
+        "backoff_multiplier": -5941.7866,
+        "deadline": "5s"
+      },
+      "endpoint_overrides": {
+        "ep_63": {
+          "address": {
+            "host": "QYHNJYHILQQVQCBG",
+            "port": 28817
+          },
+          "connect_timeout": "1s",
+          "retry": {
+            "max_attempts": 29,
+            "base_delay": "50ms",
+            "backoff_multiplier": 9706.5187,
+            "deadline": "5m"
+          },
+          "tls_cert_path": "XHGCLNQVAEKWMJSJZNYBABMBBOHBREBSIOEIDEVIR"
+        },
+        "ep_31": {
+          "address": {
+            "host": "CFTNYMRYOAJQXSNVDSRZJCXAFZTKWXTBODXNCRESEYNCSSVCBVHLRHHEUCH",
+            "port": 14547
+          },
+          "connect_timeout": "10ms",
+          "retry": {
+            "max_attempts": 18,
+            "base_delay": "10ms",
+            "deadline": "5s"
+          },
+          "tags": [
+            {
+              "key": "IXODZM",
+              "value": "KALYHQBXELKANGQMAQYIEBBGHDDYQHG"
+            }
+          ],
+          "tls_cert_path": "HKTUXGWVSYOCOPUDCXKDADRAAWABPMSFPWTAZMXF"
+        },
+        "ep_99": {
+          "address": {
+            "host": "VFONLRIZUTDZPD",
+            "port": 48346
+          },
+          "connect_timeout": "25ms",
+          "retry": {
+            "max_attempts": 54,
+            "base_delay": "10ms",
+            "deadline": "2m"
+          },
+          "tags": [
+            {
+              "key": "GRZRKOAJXSBYQDSLMVRDCFZRWJCQWPZUCAHVVKYFOLPZGOBMQYESWEVVFJT",
+              "value": "ENHVCFXXVPVZWXPMIGPYREMPHLSMUU"
+            },
+            {
+              "key": "YGXZYXRM",
+              "value": "ZOFDFECJXSTHVYLUXYNJBXSWGFOYYENHVQTZEVWMLPFYIUDG"
+            },
+            {
+              "key": "LSMCFT",
+              "value": "OVZJWDDBIERKGAWJCPOOPQRGAVYTG"
+            },
+            {
+              "key": "EKXBBCRKOWGZVJMQZGQFEDYRIXIQGVZHJFIGMIIMHQVIBLJZIZIWSDUQTI",
+              "value": "YTXIXEPYYYX"
+            },
+            {
+              "key": "FBOKIMLDJQQBRFQDWZSLOIVTRDWX",
+              "value": "ALGAEKZXYKUCMXNRPJYLPLJOGOLGOBUUVBKVOOUWOS"
+            }
+          ]
+        },
+        "ep_25": {
+          "address": {
+            "host": "LCNXVJWBWUNMIPYXGQIWCBQQXNAJORZLNGBPHLXJIMFRGUCKSRLGDBVJ",
+            "port": 21996
+          },
+          "connect_timeout": "500ms",
+          "retry": {
+            "max_attempts": 98,
+            "base_delay": "50ms",
+            "backoff_multiplier": -5779.8317
+          },
+          "tls_cert_path": "RDHFZAAFPECRAUQEUESYBAGVVGQMGV"
+        },
+        "ep_95": {
+          "address": {
+            "host": "BCHVVXEVZIZWAEJCJDXLMPEAIOOVLVRZXKTOAYMQCNQGIS",
+            "port": 45607
+          },
+          "connect_timeout": "10ms",
+          "retry": {
+            "max_attempts": 62,
+            "base_delay": "200ms"
+          },
+          "tags": [
+            {
+              "key": "YXSAAZAUYDBJPEQKPEZXEFOBEMFIKRUIXGLLMSFAXBL",
+              "value": "YIXGWGPMOPBXVLUILREU"
+            },
+            {
+              "key": "CFTLYWXBLWVPGPIUDJQCVOBBYZZPBDVWSRHFLKGMAMWMDRCTZCC",
+              "value": "OVESKU"
+            },
+            {
+              "key": "KOQWLGYFOJFHEOMZLD",
+              "value": "VOBCWCZTDVQIWKYHWBCMMDZXRZYHSIHLSGNKVEJANMYWUVVJOGFYIDDATDFVVF"
+            },
+            {
+              "key": "HAFOXHPZCURORHYTUNORDOUZMYGAKCGDZBLQPKOHOVNTZG",
+              "value": "X"
+            }
+          ],
+          "tls_cert_path": "JONHMJGATCJHGANZLNRMJMYPHYUIU"
+        },
+        "ep_13": {
+          "address": {
+            "host": "IUWIILFHVVSNEYFZTMOJHWIJBFUPCGFGILDVYFFFDLDCRZNPHXFIXABYQFNWRA",
+            "port": 23113
+          },
+          "connect_timeout": "5s",
+          "retry": {
+            "max_attempts": 6,
+            "base_delay": "200ms",
+            "backoff_multiplier": -8917.2972,
+            "deadline": "5s"
+          },
+          "tags": [
+            {
+              "key": "EHZTJAYYVJQ",
+              "value": "SAHAMQQGCGJYDIXEHXEJTTFWALKMJBFPRUGREURMEYPEUFFBKZMFDOSPXC"
+            },
+            {
+              "key": "MNR",
+              "value": "SHVNNRPEIVDYOJ"
+            }
+          ],
+          "tls_cert_path": "UZBNEEVWBWXVPDCEVIAMHPZOUHEWTE"
+        },
+        "ep_64": {
+          "address": {
+            "host": "YSBDNMYLNGGSGVFHXMGRRQ",
+            "port": 58933
+          },
+          "connect_timeout": "50ms",
+          "retry": {
+            "max_attempts": 77,
+            "base_delay": "25ms",
+            "backoff_multiplier": -1489.4745,
+            "deadline": "5s"
+          },
+          "tags": [
+            {
+              "key": "IFGWJNNPVXUDBPGHIXOBONWJUDSWIFZRGFIQUASNOCCPHRJULTWIKSVBJREJC",
+              "value": "ANMCQXRSRXPXYAARQTIJMRFDTRZHVAPDUIHJMEEIPSHPMOIAGEZJOWUIZFBTNIP"
+            },
+            {
+              "key": "XPEWIFOKUTAWVYSJHYBZ",
+              "value": "UAZJBSSUKDAXURIJAXXNOFVKRKGOBEDJJTVOTKMUCUJMSSTTGXNIQMRBMRJ"
+            }
+          ],
+          "tls_cert_path": "LD"
+        }
+      },
+      "tags": [
+        {
+          "key": "RUKTMLEZSIKQGLSMIVWPQBOESLEBZSDFZEVZG",
+          "value": "MCAWNBMFQADGARTRUNZEVXZCZVOLPLLRJKIEFXJBDZCHSGCLFSZZZTZMZKR"
+        },
+        {
+          "key": "NBJKPZVXYJFXVFEYDZESUDKYZVUGXCHTTIAJSDXTOMMIURVEOOLUKTJY",
+          "value": "IBZHAQPUDXKTBGJTDTHYCTWBZNMWTWUBXSFQSZJBFYZLLBWPEG"
+        },
+        {
+          "key": "QURKUTZZPWKXDNBAESPGSSEY",
+          "value": "ZORWEDNVYBCONCQRSBNOUBWSYFI"
+        },
+        {
+          "key": "HNYGDPLVAKLO",
+          "value": "UOYGOFYFHXCAVBPBEKKF"
+        }
+      ],
+      "nested": {
+        "scope": "COYB",
+        "extra": "HHTCMKBIQJRXHLAPHRFJQF",
+        "log_level": "warning",
+        "retry": {
+          "max_attempts": 75,
+          "base_delay": "10ms",
+          "backoff_multiplier": 7659.9248,
+          "deadline": "10m"
+        },
+        "nested": {
+          "scope": "MIDP",
+          "extra": "QHNNOHBGZWXYCJEWVVVTNYHMDNIDVNNFJKPRZSQESOFJPZPKFFUKFPIYCQK",
+          "log_level": "warning",
+          "retry": {
+            "max_attempts": 26,
+            "base_delay": "25ms",
+            "backoff_multiplier": -535.906,
+            "deadline": "5s"
+          },
+          "endpoint_overrides": {
+            "ep_61": {
+              "address": {
+                "host": "QAWQBBGISIEFQFHXAKHAHLNCMFUHFVMAXJFZSPVBDUVGNPMDQI",
+                "port": 22342
+              },
+              "connect_timeout": "25ms",
+              "retry": {
+                "max_attempts": 43,
+                "base_delay": "10ms",
+                "backoff_multiplier": -6783.4858,
+                "deadline": "5s"
+              },
+              "tls_cert_path": "ELWEQQG"
+            }
+          },
+          "tags": [
+            {
+              "key": "MPS",
+              "value": "MOEUNRNEMRAAFFEMHBZNKMLEJNVMJDPNVZMQYNZAAQSWXOLQ"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "admin_endpoint": {
+    "host": "VLYNPGTFDSYYFBKYIJT",
+    "port": 46705
+  },
+  "warmup_delay": "5s"
+}

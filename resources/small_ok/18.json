@@ -1,0 +1,16 @@
+{
+  "service_name": "VOKHG",
+  "worker_threads": 220,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "env": {},
+  "rate_limits": [],
+  "config_tree": {
+    "scope": "ZHFHGXLSQGZVYPGWJIAKMHYXMRLSSQ",
+    "extra": "ITWJRDJP"
+  },
+  "admin_endpoint": {
+    "host": "ZNENQPSDWGSIRKZZVRPC",
+    "port": 7790
+  }
+}

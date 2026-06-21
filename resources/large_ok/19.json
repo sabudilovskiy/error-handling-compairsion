@@ -1,0 +1,461 @@
+{
+  "service_name": "ZQDQGMLQJSETIDINKIDYKJASTGCGDROMXCZDNADSXNY",
+  "worker_threads": 218,
+  "enable_tracing": true,
+  "shutdown_grace_period": "10m",
+  "backends": [
+    {
+      "name": "UNHYRSXDZG",
+      "endpoints": [
+        {
+          "address": {
+            "host": "UPDRWOAO",
+            "port": 59368
+          },
+          "connect_timeout": "50ms",
+          "retry": {
+            "max_attempts": 52,
+            "base_delay": "1s",
+            "backoff_multiplier": -1433.9972,
+            "deadline": "5s"
+          },
+          "tags": [
+            {
+              "key": "ODVWUIEPJOMJXFOOJJVYBCGJVYNDO",
+              "value": "QOVA"
+            },
+            {
+              "key": "CCEFNJODGTPVZCNUUEAMTUJUBSRSLIGIQKBAYIUGC",
+              "value": "QOYQEKZQZIRW"
+            },
+            {
+              "key": "UXVQJUQSNPBHEBODQSDIWOWMVKKLFOKXDUVVQONTBLCKNLOSXLBJIICHMBFFP",
+              "value": "RDWTQCBSNBWVETKHRXRBIGEHJDSOECWOJRMSHLXZDV"
+            },
+            {
+              "key": "ORHROJBS",
+              "value": "ODGTCPEMQIPLOBQNASHVJRHDZMNUEWRHEOFWTPCIYMOSCSVAXHCIHP"
+            },
+            {
+              "key": "IONZAEDFNZAITZPTKHJFYCRJADCBVYCRO",
+              "value": "BCMW"
+            },
+            {
+              "key": "KIEDTBBLFDUKPLIWUODRUZS",
+              "value": "TFIYSMKAGRPZC"
+            },
+            {
+              "key": "PHVTFFFUMFWRCZGIDFUPQQNGRCTQNLTGKQEUVSGABWIJWN",
+              "value": "WWRCWUMQASTUVOSIQVSIYOMYSKDPE"
+            }
+          ],
+          "tls_cert_path": "MEBWYMTGHZDXCLVEPMLUDQSPBERAVPFKPO"
+        },
+        {
+          "address": {
+            "host": "ZJKJQPMJTMMVAZHRX",
+            "port": 13235
+          },
+          "connect_timeout": "10ms",
+          "retry": {
+            "max_attempts": 19,
+            "base_delay": "200ms",
+            "backoff_multiplier": -9314.3517,
+            "deadline": "5s"
+          },
+          "tags": [
+            {
+              "key": "LRMNOPZYCCYSLZLEGJELIQMPKFKLSQ",
+              "value": "OI"
+            },
+            {
+              "key": "UCOCKPBQETSGLERTMOIVKFRZWZRHPVAFYXZOSGKIYYTJALNEKQEVFRDOXBIL",
+              "value": "JWIIVERCLTQLZAZV"
+            },
+            {
+              "key": "OFPOHKPJBQHLDLOCVHOOXTEDIZXNMVYXNSFYDDKDGKYQEZZVET",
+              "value": "RPJKYHVEOPPUYARZDTUENUYNQBQVCQCRGKRRKWSZLFNHGVFMROFZTP"
+            },
+            {
+              "key": "OWSTHXODUAPHUXQEVLLLAOJFPTKO",
+              "value": "GJDZHOPQRNLLKSEQXDTPHPLAFSGCZMMNALFCVBLVZHSPMLQDJ"
+            },
+            {
+              "key": "WAVOI",
+              "value": "DKXJECIXGJXDRDRPJRQXCRP"
+            },
+            {
+              "key": "T",
+              "value": "GZVYVTUJNZWPWDBXGA"
+            },
+            {
+              "key": "ZJJOLVRJLIGCMONWECGTNUGOPDTLANMSXESJFD",
+              "value": "EQJZOEYEEGMPKPIJVLHVQWHUYMWHUHKFKULLMSNGSDUJEJYKKFHDTGHRN"
+            },
+            {
+              "key": "GYSWKBSBXUKRSQLJJGPFXELAWOH",
+              "value": "ZKYUESVJXMXLVTEMNIAIRZTXIQSDCCGBRRORKMUUFGLEFINTUVDK"
+            }
+          ],
+          "tls_cert_path": "CAPPTVGPFOFOQFUSMWRLRGZNOHFYUGEJOAIQWEPICVEJWN"
+        }
+      ],
+      "min_log_level": "warning",
+      "alerts": {
+        "MRSGZH": {
+          "metric_name": "VZQMFHWFFGJYVYEIELVJCQKOOFFXXQIY",
+          "warn_at": -5778.4288,
+          "crit_at": 6981.073,
+          "evaluation_window": "5m"
+        },
+        "RHV": {
+          "metric_name": "QTMUAACPFJZMJBEIVNDEXNNKUQLRDAPJXEIHLJONODOFUFVARHQIGNDAOUOOM",
+          "warn_at": -8651.9748,
+          "crit_at": -4663.56,
+          "evaluation_window": "10s"
+        },
+        "OC": {
+          "metric_name": "OXZXHKFSYOGGAIWUEWLEH",
+          "warn_at": 2769.5875,
+          "crit_at": -200.4017,
+          "evaluation_window": "5s"
+        },
+        "NSGF": {
+          "metric_name": "RMZRKWQNDSKTSKOMOEEPATZNCQXB",
+          "warn_at": 6680.4693,
+          "crit_at": 7119.2655,
+          "evaluation_window": "5s"
+        },
+        "JD": {
+          "metric_name": "K",
+          "warn_at": -741.6489,
+          "crit_at": -2610.2251,
+          "evaluation_window": "5s"
+        },
+        "KVWHKK": {
+          "metric_name": "WPDKQJWHALQXANPBJANOLYFEMTRHIKZTZEBRSWAPPAOUTCYBKW",
+          "warn_at": 3359.9152,
+          "crit_at": 9736.2739,
+          "evaluation_window": "5m"
+        },
+        "TND": {
+          "metric_name": "RXUFJIWFXZTGEHMDIOHFNUQHWZQPPIOWEFHIJRFFUNYYK",
+          "warn_at": 4145.2737,
+          "crit_at": -7149.4489,
+          "evaluation_window": "5s"
+        }
+      },
+      "fallback_retry": {
+        "max_attempts": 53,
+        "base_delay": "10ms",
+        "deadline": "10s"
+      }
+    }
+  ],
+  "routes": {
+    "MYSN": {
+      "pattern": "N",
+      "backend_names": [
+        "CDELUERCOKYWDAPRQQOXFNWQBPGWILYVLSIYTYSJBNZUUGJCQJVJDNYUO",
+        "IXJWTWNMFBUDRAGSXEK",
+        "GXETBXL",
+        "EEURLNDDDQOZIKHYKZMWQNINSSZEMJCWUQPFPXDYZZNTSAMNPUGQCTLZXSZQQFK",
+        "IFEHDSUUSYPAPZRJFXGZAJZTPYVYJ"
+      ]
+    },
+    "JSUXUN": {
+      "pattern": "UNEYBAWYWSURIXOEUHSWXFDXNWHFNACNY",
+      "backend_names": [
+        "USUEMRHS"
+      ],
+      "timeout_override": "100ms"
+    },
+    "TI": {
+      "pattern": "BJITSQXGGNYWOVZNEGJPXXPNULHNRTSFCBEASSZRKNYWNLIYAOXEJNTYS",
+      "backend_names": [],
+      "timeout_override": "500ms"
+    },
+    "DJ": {
+      "pattern": "HKDJSVWCHSMIBYYVHJALSIJBGPXNCZSAAIFY"
+    },
+    "KZERA": {
+      "pattern": "IOAKISSFIYHOJAWKYFRVRSSBSVDMFLVQENSNWGNOPYJPQWU",
+      "backend_names": [
+        "BWOYOVJHAZZXISCWMRBWTFFBLGIZLN"
+      ],
+      "timeout_override": "10ms"
+    },
+    "LMYM": {
+      "pattern": "EQ",
+      "backend_names": [
+        "S",
+        "USWUBUYUIUOZVCDOBKCQ",
+        "MBKKOOCXCONZEEWZZDJXPCZOEPN"
+      ],
+      "timeout_override": "10ms"
+    },
+    "IEUTSY": {
+      "pattern": "PCEFZPUFJEFBPPRDZUWJCRLVYHIVEYCJMEORXVDVGFYPWGOOIBGDJEPMOW",
+      "backend_names": [],
+      "timeout_override": "50ms"
+    },
+    "DLASB": {
+      "pattern": "XXSWZEDRPDXRGQCNOFRDWFHDACZCQCBE",
+      "backend_names": [],
+      "timeout_override": "10s"
+    },
+    "YEI": {
+      "pattern": "VNLHRBHRQVFFCEGWEPCMLSHJSMPFUOBSTQERFXWLNJTXXYB",
+      "backend_names": [
+        "YXPTFVZRTSQBONIRNUFFOZTTECHVDGFYFVNDIAXQJIHCJO",
+        "CDRKYLIWCFZASXICHXYRYFUWHOKDTIGOFEZJBEKWVMADGJTNNOWPCMOZSITSJFH",
+        "UPBJCVASHRYPIEKQUBTWPLQHZVGYWEZNFETSD",
+        "GNTMWOENREHQYXDMZFGKGWVLCIEEZIAKXUUGNNKJLHZTZYYIGTHPRVJ",
+        "UWGKADTFZRPOFLUJDVNHBDATNUVSCAWZEYENUS",
+        "RMKHKOVRKYFQNIEGJYIBEGJKRFGGCQZQVTZFLF"
+      ],
+      "timeout_override": "25ms"
+    },
+    "PU": {
+      "pattern": "LUBIRECGDHJU",
+      "backend_names": []
+    },
+    "YQIKU": {
+      "pattern": "BFLYEHALNQDYUGILXXAOIRZLVLLNETYKEHERKIEGKFPSLYWPKLETNTQITYTMPM",
+      "backend_names": [
+        "PIPREBD",
+        "TLMOFGQAZFR",
+        "RUSPSZW",
+        "ILLMWUCSGAKPFEHFTFKKOJFCKMGJOTGCRQVNWUOGTDYSJLTYCDIFEZWAMWFXYJ",
+        "NDOTZVUZXGXQSOJMMJJWCHXRGIPPRTTBQSFAPXUNUMJWITQHPWSTER",
+        "AEZPGUBVBWNAFCAJLLVYWZVRDMZCEONVZVECHFTHD",
+        "HRONF",
+        "FBJIMFTLUTPXOAWCYSDRNUXVKULODWNKIDFNIZCPVPENQQWWJHUGG"
+      ],
+      "timeout_override": "10ms"
+    }
+  },
+  "env": {
+    "XADC": "RBKQZYXLNWHKFTGSYWIDUKVYMJHLQRNMRAJDSEDUAGJ",
+    "QGXHG": "WWFVBENDQLXZRYMJRVGLKARBUEUXQEIBFXTPJMSSKLGKAQEDOLYUUHEHHBBH",
+    "XMSYXN": "WQW",
+    "ZK": "OGGRRMKZJEKVJFHDGLGKGIV",
+    "JFFIQ": "WZZNYICHZLDMMFWKCRMOU",
+    "WC": "HFSVGYKOKILHLHIGWWVWDJZYTGERLCHSGRMXQ",
+    "MOXE": "CIPOXEOEMSCFFSGDXSZGPCDH",
+    "ZBQTWU": "XOM",
+    "IMDXD": "VIIDDNRAYURDQAN",
+    "UXFMG": "BKZRQZHJEWBJZNKXCXPVDVVPDDQNCBX",
+    "DAAU": "EDHNRFVZSI",
+    "FIY": "HFPACPQPWDHOSLWMBJOSBWICKAEI"
+  },
+  "config_tree": {
+    "scope": "WTMLVPPLVHNAOIYBZTWCOGSBAYGWECTCGUIKBDBLPNFI",
+    "extra": "KXBIFF",
+    "endpoint_overrides": {
+      "ep_7": {
+        "address": {
+          "host": "BCBJKFSJQUXXUDAOKQTQRUCSTNEKICAHBOOAW",
+          "port": 5545
+        },
+        "connect_timeout": "10ms",
+        "retry": {
+          "max_attempts": 72,
+          "base_delay": "10ms",
+          "backoff_multiplier": -6581.2693,
+          "deadline": "30s"
+        },
+        "tags": [
+          {
+            "key": "MYJYSDOANYLCTYDBVTLOAPBEEAMNBDRUZYYDDSSHHUGFKOTIAPAGWYCKN",
+            "value": "MNQKFVJGSPXZCAMAYIWKCWTYIPTWAEHVKQJILQPMVNRYXEMAONZSEY"
+          }
+        ],
+        "tls_cert_path": "DHZWSCUFQAHYXNRCFFJODITXKHQNYIVBYVPSKKREJX"
+      },
+      "ep_35": {
+        "address": {
+          "host": "YWTYSUJELDOUPIIWYULVXLTSALQQHBOVTT",
+          "port": 53001
+        },
+        "connect_timeout": "25ms",
+        "retry": {
+          "max_attempts": 87,
+          "base_delay": "10ms",
+          "backoff_multiplier": -14.2593,
+          "deadline": "5s"
+        },
+        "tags": [
+          {
+            "key": "MHF",
+            "value": "JBTCGBOWNGWAOZCCCW"
+          },
+          {
+            "key": "JCPVPFGIBPDAXYKBXGQWRUKVPMSPWAAZDFITFESVEIRYZPLOKV",
+            "value": "CBNVLQXNUTSKLRRAYLWJPOUYALYZI"
+          },
+          {
+            "key": "UBOSJLNLUSDDAX",
+            "value": "YTJTNXFPTFZPGOLWJSPNPYGMFUUNKTBYWUYYBZHWFAAKCVHWBBCGGGXNADXNSD"
+          },
+          {
+            "key": "HKKLUHHESVRWSLPGLPBTCNJULCZQWDTSCJJVISXIIJEBPYPSXOY",
+            "value": "FTRRTZGTVXFNOVMYPQLGVIRTQM"
+          },
+          {
+            "key": "OKBGWFMVYQAKHDXJLEZXQKNUEKZOYVOMXGGNWEHUAYCQAYRSJIBLAYCDWMJD",
+            "value": "ESNLUHVUIYOIUKETJYZHWTIOZRNLCPTS"
+          },
+          {
+            "key": "KWBABDPWSKVRRGDFGYECDCETWW",
+            "value": "AETR"
+          },
+          {
+            "key": "IMQCV",
+            "value": "AOJIFBH"
+          },
+          {
+            "key": "KBDZUNNUTTRC",
+            "value": "KJDVYDXNHTCYCBWGIZIZZAEWJU"
+          },
+          {
+            "key": "KMFDLGGZNENJMYRYHFLZMHCZNUQLACWLFRSCJN",
+            "value": "MWKDWMDWSARQCYEJBPBXAMFBXCQMOXILPUGEDYCZBFZWXU"
+          },
+          {
+            "key": "VWKTEJSZPCJRJHEHDLYIVICMFDLAO",
+            "value": "LRJLTSZEVYMIXFFPXNSYMWADJZWKFNFDWSAGJQSYOPTDIZSGRID"
+          },
+          {
+            "key": "MFPHHXWTICZCMVVSEFMSVE",
+            "value": "GVODHHRUVEACKQZBMMLHVAMODYAA"
+          },
+          {
+            "key": "UMYTEQDCOBSIGKABPETVYQQYDEREEKLZHVFHOMWOPFWBIFJTEZ",
+            "value": "PDBGPKZFNFLUGVXYKLHHLYVPQXXGEKGYCXDFXNZMODPAWZJHM"
+          },
+          {
+            "key": "HCNKIYCTLTEYIFKYI",
+            "value": "DREIKTVVNGKYMMAKPGKZEPTGBHNEXGQDVBABFLLXH"
+          },
+          {
+            "key": "GKXDJWHZGDBXEFLRIDXATHZJAPKWXCPYXJAEJZJMAWO",
+            "value": "GMHUZUOGAYHRVYBJLVMIWNTLUFRAIIDCCQJDPAFQZYLJFYUMCSCLEXKHDVUJNFL"
+          },
+          {
+            "key": "WTFNMKGWMAOCMUNSZRWKOIRQPVTOYKDO",
+            "value": "GXIZBIAIBSMCVWDZCQJZHBXYVJJDP"
+          },
+          {
+            "key": "",
+            "value": "XENVKFPPRKUEASZADMISZFFOKPKHSAFAGQTUPHCJRXSUDLBVSLBOCLC"
+          },
+          {
+            "key": "PBTEMKWTRUTDXWMRWWUBUEMCTBJUXLPLKGKRXORPLMKQ",
+            "value": "NOGXOCFWJHVMGBYGOXQJCBWYGCDYSAGCQRBUVQOKLKPFVDL"
+          },
+          {
+            "key": "CMSI",
+            "value": "HOTYFXGICJOA"
+          },
+          {
+            "key": "DNDWQNZECIOVTWLSICPNCCRIIUGBUAV",
+            "value": "NPGRUCZSJGNYKYVBLAGXMFHFQHPSPBMJR"
+          },
+          {
+            "key": "PNGFAFPBBOQFOKPXRZBWXTYMQTNKAQGCWUVBHHFIGXDYTACGQHLGM",
+            "value": "AYEIWCWBZXIRFDZWZWVIXUNJHZKZRLVYKSXBRFGIYUPOLVCOVUHIDLRZD"
+          }
+        ],
+        "tls_cert_path": "XRIFELESMKTHRWITPLFQPNMNCQMBYFANHKJNJFZLTPVEQACSYTVHKBWAAOBCY"
+      }
+    }
+  },
+  "global_thresholds": {
+    "ESAAH": [
+      {
+        "metric_name": "UCGJHAACXSGFFMCFIFZDYGYIHL",
+        "warn_at": -943.1889,
+        "crit_at": 7381.1566,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "IHQXVJYZEMEYMTRURORRIXJWCHYINYI",
+        "warn_at": 5785.9354,
+        "crit_at": -1604.2077,
+        "evaluation_window": "10s"
+      },
+      {
+        "metric_name": "VGCTRDNJXFDWCURPGMXJVZDIAOJUQHBSAJOSHMHLTFUBWYACTXUOFTCCIFNF",
+        "warn_at": -4017.4573,
+        "crit_at": 7620.9532,
+        "evaluation_window": "10s"
+      },
+      {
+        "metric_name": "RIUMLAWLZCIHGWZUSXDHMWHMMFVETTOFWCHKBCOUTGIRJHGIULLBQHFYQP",
+        "warn_at": 6768.0646,
+        "crit_at": 3814.5503,
+        "evaluation_window": "1m"
+      },
+      {
+        "metric_name": "WWWIHDDPVPITFAZJXAOHZXXFOGWKDZKZFFJLTPSQHRRCDGBLHYJFONEQQMSVM",
+        "warn_at": 8431.253,
+        "crit_at": 41.3905,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "",
+        "warn_at": -6590.0794,
+        "crit_at": 9603.2417,
+        "evaluation_window": "10m"
+      },
+      {
+        "metric_name": "YFIN",
+        "warn_at": 7574.0298,
+        "crit_at": -2452.5078,
+        "evaluation_window": "10s"
+      },
+      {
+        "metric_name": "XAYFLEPFMSKIKCCDCYHOKMCHMMWOHDHLWSN",
+        "warn_at": -5694.9023,
+        "crit_at": 8285.531,
+        "evaluation_window": "2m"
+      }
+    ],
+    "FKCJ": [
+      {
+        "metric_name": "SXPCROIEISKBDMMXZXUPWYDNREVDRDKWNSFPTY",
+        "warn_at": -9860.4504,
+        "crit_at": 2422.8325,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "JCGDPROUVEIETXRHXCVOSBYKTNZRTI",
+        "warn_at": 3765.4984,
+        "crit_at": 3456.2219,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "XXNPA",
+        "warn_at": -3941.8373,
+        "crit_at": -8949.4558,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "EHCTTVTSXABQDCXXDOFNUWYYGFLXINDKFBXPPKJIFDRUXPUKGHCW",
+        "warn_at": 7380.7188,
+        "crit_at": 5651.0058,
+        "evaluation_window": "5s"
+      }
+    ],
+    "CW": [
+      {
+        "metric_name": "TAJZRHCXLCJRUWHEZNO",
+        "warn_at": 6575.7109,
+        "crit_at": -7569.1233,
+        "evaluation_window": "10m"
+      }
+    ]
+  },
+  "warmup_delay": "50ms"
+}

@@ -1,0 +1,7 @@
+{
+  "service_name": "NPSAGOPIUZFBQPKCHX",
+  "worker_threads": 253,
+  "enable_tracing": true,
+  "shutdown_grace_period": "2m",
+  "global_thresholds": {}
+}

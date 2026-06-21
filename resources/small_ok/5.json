@@ -1,0 +1,12 @@
+{
+  "service_name": "XLZWXUQAOYHUBFDLPHM",
+  "worker_threads": 41,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "allowed_origins": [],
+  "config_tree": {
+    "scope": "EEAAGYGFFJKGRVUGFWG",
+    "extra": "MJALNFEICKJTSATVWKCJLJPWKFPPWF",
+    "log_level": "debug"
+  }
+}

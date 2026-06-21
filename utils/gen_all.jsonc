@@ -1,0 +1,194 @@
+[
+  {
+    "quantity": 30,
+    "config":   "config/large.jsonc",
+    "cmd":      "ok",
+    "group":    "large_ok"
+  },
+  {
+    "quantity": 30,
+    "config":   "config/medium.jsonc",
+    "cmd":      "ok",
+    "group":    "medium_ok"
+  },
+  {
+    "quantity": 30,
+    "config":   "config/small.jsonc",
+    "cmd":      "ok",
+    "group":    "small_ok"
+  },
+
+  /////////////////////////////////////////
+  {
+    "quantity": 3,
+    "config":   "config/small.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       1,
+    "group":    "small_error_1"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/small.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       2,
+    "group":    "small_error_2"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/small.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       4,
+    "group":    "small_error_4"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/small.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       6,
+    "group":    "small_error_8"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/small.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       10,
+    "group":    "small_error_10"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/small.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       20,
+    "group":    "small_error_20"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/small.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       50,
+    "group":    "small_error_50"
+  },
+
+  /////////////////////////////////////////
+  {
+    "quantity": 3,
+    "config":   "config/medium.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       1,
+    "group":    "medium_error_1"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/medium.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       2,
+    "group":    "medium_error_2"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/medium.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       4,
+    "group":    "medium_error_4"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/medium.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       6,
+    "group":    "medium_error_8"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/medium.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       10,
+    "group":    "medium_error_10"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/medium.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       20,
+    "group":    "medium_error_20"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/medium.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       50,
+    "group":    "medium_error_50"
+  },
+
+  /////////////////////////////////////////
+  {
+    "quantity": 3,
+    "config":   "config/large.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       1,
+    "group":    "large_error_1"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/large.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       2,
+    "group":    "large_error_2"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/large.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       4,
+    "group":    "large_error_4"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/large.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       6,
+    "group":    "large_error_8"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/large.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       10,
+    "group":    "large_error_10"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/large.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       20,
+    "group":    "large_error_20"
+  },
+  {
+    "quantity": 3,
+    "config":   "config/large.jsonc",
+    "cmd":      "bad",
+    "error":    "wrong_type",
+    "at":       50,
+    "group":    "large_error_50"
+  }
+]

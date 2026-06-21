@@ -1,0 +1,14 @@
+{
+  "service_name": "EMUBCRDLSB",
+  "worker_threads": 232,
+  "enable_tracing": true,
+  "shutdown_grace_period": "5s",
+  "routes": {},
+  "env": {},
+  "admin_endpoint": {
+    "host": "BHBREJNERDSJRVFDSS",
+    "port": 41871
+  },
+  "global_thresholds": {},
+  "warmup_delay": "10ms"
+}

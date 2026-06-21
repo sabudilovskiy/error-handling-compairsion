@@ -1,0 +1,8 @@
+{
+  "int_min": 0,       "int_max": 100000,  "int_bias": "small",
+  "float_min": -1000, "float_max": 1000,  "float_bias": "small",
+  "str_min_len": 0,   "str_max_len": 32,  "str_bias": "uniform",
+  "array_max_size": 10,                   
+  "expand_chance": 0.2,
+  "nesting_chance": 0.2
+}

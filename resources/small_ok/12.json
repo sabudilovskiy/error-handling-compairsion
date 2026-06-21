@@ -1,0 +1,10 @@
+{
+  "service_name": "VQVLEMALPIUZOWT",
+  "worker_threads": 4,
+  "enable_tracing": true,
+  "shutdown_grace_period": "10s",
+  "config_tree": {
+    "scope": "KVMZCABVQHCNODVN",
+    "extra": "RKTRFWBRFQCMTNVTPPTMRAUXCGZVILL"
+  }
+}

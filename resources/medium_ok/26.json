@@ -1,0 +1,40 @@
+{
+  "service_name": "GVGNTRBEYYPBXVTQFUNHXNW",
+  "worker_threads": 216,
+  "enable_tracing": false,
+  "shutdown_grace_period": "10m",
+  "backends": [],
+  "routes": {
+    "PYMLHS": {
+      "pattern": "",
+      "timeout_override": "25ms"
+    },
+    "UA": {
+      "pattern": "VRKKVNNWGBIGTM"
+    },
+    "CE": {
+      "pattern": "WYBBNGLTYCRKDNZBN"
+    },
+    "VH": {
+      "pattern": "EVILZYTYVWNLQPTMWBBESAQDT"
+    },
+    "TBW": {
+      "pattern": "",
+      "timeout_override": "10ms"
+    },
+    "DCT": {
+      "pattern": "AVNRAZIPKUURXMADDGOHJHETQMM",
+      "timeout_override": "10ms"
+    }
+  },
+  "env": {
+    "AE": "KCGIKNPGVPHA"
+  },
+  "allowed_origins": [
+    "DERXEB"
+  ],
+  "global_thresholds": {
+    "BBMPRD": []
+  },
+  "warmup_delay": "10ms"
+}

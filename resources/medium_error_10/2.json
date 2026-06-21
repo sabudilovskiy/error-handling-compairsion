@@ -1,0 +1,117 @@
+{
+  "service_name": "DXMPECC",
+  "worker_threads": 6,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "routes": {},
+  "env": {},
+  "allowed_origins": [],
+  "config_tree": {
+    "scope": "IZIGFJJUXLCTKVMQHFHP",
+    "extra": "RJAJSWJY",
+    "nested": {
+      "scope": "ZBCBOUIQR",
+      "extra": "WKEVGCNGUUOIFLNXSKUR",
+      "log_level": "warning",
+      "retry": {
+        "max_attempts": 7,
+        "base_delay": "10ms"
+      },
+      "endpoint_overrides": {
+        "ep_23": {
+          "address": {
+            "host": "ABLWCJXVK",
+            "port": 1192
+          },
+          "connect_timeout": "10ms",
+          "retry": {
+            "max_attempts": 96,
+            "base_delay": "500ms"
+          }
+        },
+        "ep_25": {
+          "address": {
+            "host": "JEIMTFKSALBOFLZZLJSDOGNGDBBB",
+            "port": 48307
+          },
+          "connect_timeout": "50ms",
+          "retry": {
+            "max_attempts": 97,
+            "base_delay": "50ms"
+          },
+          "tags": [
+            {
+              "key": "JYNUGPGHONPBHNOHUNGPGBBIIH",
+              "value": "YHNIEKBKSDSMUUZW"
+            }
+          ]
+        },
+        "ep_27": {
+          "address": {
+            "host": "SFKJVPZUKNQGUZVZIKMPCIUVGBMTE",
+            "port": 50253
+          },
+          "connect_timeout": "10ms",
+          "retry": {
+            "max_attempts": 85,
+            "base_delay": "2s"
+          }
+        },
+        "ep_1": {
+          "address": {
+            "host": "FATIDM",
+            "port": 53075
+          },
+          "connect_timeout": "500ms",
+          "retry": {
+            "max_attempts": 87,
+            "base_delay": "25ms",
+            "deadline": "15s"
+          },
+          "tags": []
+        }
+      },
+      "nested": {
+        "scope": "T",
+        "extra": "RIT",
+        "retry": {
+          "max_attempts": 8,
+          "base_delay": "2s",
+          "deadline": "5s"
+        },
+        "endpoint_overrides": {},
+        "nested": {
+          "scope": "MHYPMDCDTZLQNNWYOCUGUJPNDZRFLFF",
+          "extra": "KPKIRAWFAUJDRDPZWTPQCQ",
+          "log_level": "warning",
+          "retry": {
+            "max_attempts": 76,
+            "base_delay": "1m"
+          },
+          "tags": [],
+          "nested": {
+            "scope": "_pad_4",
+            "extra": "",
+            "nested": {
+              "scope": "_pad_5",
+              "extra": "",
+              "nested": {
+                "scope": "_pad_6",
+                "extra": "",
+                "nested": {
+                  "scope": "_pad_7",
+                  "extra": "",
+                  "nested": {
+                    "scope": [],
+                    "extra": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "global_thresholds": {}
+}

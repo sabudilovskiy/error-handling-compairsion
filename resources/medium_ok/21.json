@@ -1,0 +1,21 @@
+{
+  "service_name": "WNUJP",
+  "worker_threads": 216,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "routes": {},
+  "rate_limits": [],
+  "config_tree": {
+    "scope": "HWBNXYNTOBKRPWDULAEXCDZA",
+    "extra": "RXKMPEFVBPHCYG",
+    "log_level": "critical",
+    "endpoint_overrides": {},
+    "nested": {
+      "scope": "ERNJLOQMKP",
+      "extra": "ACFWWPAPCRTX",
+      "endpoint_overrides": {},
+      "tags": []
+    }
+  },
+  "global_thresholds": {}
+}

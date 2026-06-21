@@ -1,0 +1,235 @@
+{
+  "service_name": "ZJLJFYWWRVIDAHMX",
+  "worker_threads": 19,
+  "enable_tracing": false,
+  "shutdown_grace_period": "1m",
+  "rate_limits": [],
+  "allowed_origins": [],
+  "config_tree": {
+    "scope": "RRZVGKRDWUCJNCQPUTEVZNQKANLS",
+    "extra": "Y",
+    "retry": {
+      "max_attempts": 11,
+      "base_delay": "50ms",
+      "backoff_multiplier": -866.6886,
+      "deadline": "5s"
+    },
+    "nested": {
+      "scope": "IG",
+      "extra": "RRREIVJLKFKDSSZIKABYLAO",
+      "endpoint_overrides": {
+        "ep_34": {
+          "address": {
+            "host": "WP",
+            "port": 1
+          },
+          "connect_timeout": "25ms",
+          "retry": {
+            "max_attempts": 32,
+            "base_delay": "10ms"
+          }
+        },
+        "ep_33": {
+          "address": {
+            "host": "VDGBRJZKZKBFNCWYJIVMPCRCRUHHRI",
+            "port": 12523
+          },
+          "connect_timeout": "500ms",
+          "retry": {
+            "max_attempts": 1,
+            "base_delay": "2s"
+          }
+        }
+      },
+      "tags": [],
+      "nested": {
+        "scope": "_pad_2",
+        "extra": "",
+        "nested": {
+          "scope": "_pad_3",
+          "extra": "",
+          "nested": {
+            "scope": "_pad_4",
+            "extra": "",
+            "nested": {
+              "scope": "_pad_5",
+              "extra": "",
+              "nested": {
+                "scope": "_pad_6",
+                "extra": "",
+                "nested": {
+                  "scope": "_pad_7",
+                  "extra": "",
+                  "nested": {
+                    "scope": "_pad_8",
+                    "extra": "",
+                    "nested": {
+                      "scope": "_pad_9",
+                      "extra": "",
+                      "nested": {
+                        "scope": "_pad_10",
+                        "extra": "",
+                        "nested": {
+                          "scope": "_pad_11",
+                          "extra": "",
+                          "nested": {
+                            "scope": "_pad_12",
+                            "extra": "",
+                            "nested": {
+                              "scope": "_pad_13",
+                              "extra": "",
+                              "nested": {
+                                "scope": "_pad_14",
+                                "extra": "",
+                                "nested": {
+                                  "scope": "_pad_15",
+                                  "extra": "",
+                                  "nested": {
+                                    "scope": "_pad_16",
+                                    "extra": "",
+                                    "nested": {
+                                      "scope": "_pad_17",
+                                      "extra": "",
+                                      "nested": {
+                                        "scope": "_pad_18",
+                                        "extra": "",
+                                        "nested": {
+                                          "scope": "_pad_19",
+                                          "extra": "",
+                                          "nested": {
+                                            "scope": "_pad_20",
+                                            "extra": "",
+                                            "nested": {
+                                              "scope": "_pad_21",
+                                              "extra": "",
+                                              "nested": {
+                                                "scope": "_pad_22",
+                                                "extra": "",
+                                                "nested": {
+                                                  "scope": "_pad_23",
+                                                  "extra": "",
+                                                  "nested": {
+                                                    "scope": "_pad_24",
+                                                    "extra": "",
+                                                    "nested": {
+                                                      "scope": "_pad_25",
+                                                      "extra": "",
+                                                      "nested": {
+                                                        "scope": "_pad_26",
+                                                        "extra": "",
+                                                        "nested": {
+                                                          "scope": "_pad_27",
+                                                          "extra": "",
+                                                          "nested": {
+                                                            "scope": "_pad_28",
+                                                            "extra": "",
+                                                            "nested": {
+                                                              "scope": "_pad_29",
+                                                              "extra": "",
+                                                              "nested": {
+                                                                "scope": "_pad_30",
+                                                                "extra": "",
+                                                                "nested": {
+                                                                  "scope": "_pad_31",
+                                                                  "extra": "",
+                                                                  "nested": {
+                                                                    "scope": "_pad_32",
+                                                                    "extra": "",
+                                                                    "nested": {
+                                                                      "scope": "_pad_33",
+                                                                      "extra": "",
+                                                                      "nested": {
+                                                                        "scope": "_pad_34",
+                                                                        "extra": "",
+                                                                        "nested": {
+                                                                          "scope": "_pad_35",
+                                                                          "extra": "",
+                                                                          "nested": {
+                                                                            "scope": "_pad_36",
+                                                                            "extra": "",
+                                                                            "nested": {
+                                                                              "scope": "_pad_37",
+                                                                              "extra": "",
+                                                                              "nested": {
+                                                                                "scope": "_pad_38",
+                                                                                "extra": "",
+                                                                                "nested": {
+                                                                                  "scope": "_pad_39",
+                                                                                  "extra": "",
+                                                                                  "nested": {
+                                                                                    "scope": "_pad_40",
+                                                                                    "extra": "",
+                                                                                    "nested": {
+                                                                                      "scope": "_pad_41",
+                                                                                      "extra": "",
+                                                                                      "nested": {
+                                                                                        "scope": "_pad_42",
+                                                                                        "extra": "",
+                                                                                        "nested": {
+                                                                                          "scope": "_pad_43",
+                                                                                          "extra": "",
+                                                                                          "nested": {
+                                                                                            "scope": "_pad_44",
+                                                                                            "extra": "",
+                                                                                            "nested": {
+                                                                                              "scope": "_pad_45",
+                                                                                              "extra": "",
+                                                                                              "nested": {
+                                                                                                "scope": "_pad_46",
+                                                                                                "extra": "",
+                                                                                                "nested": {
+                                                                                                  "scope": "_pad_47",
+                                                                                                  "extra": "",
+                                                                                                  "nested": {
+                                                                                                    "scope": 2823,
+                                                                                                    "extra": ""
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

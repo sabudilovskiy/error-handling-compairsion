@@ -1,0 +1,9 @@
+{
+  "service_name": "GVGNTRBEYYPBXVTQFUNHXNW",
+  "worker_threads": 154,
+  "enable_tracing": false,
+  "shutdown_grace_period": "10m",
+  "backends": [],
+  "env": {},
+  "global_thresholds": {}
+}

@@ -1,0 +1,45 @@
+{
+  "service_name": "WIJGCCIRKILMFHHPCXUS",
+  "worker_threads": 167,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "routes": {},
+  "env": {},
+  "config_tree": {
+    "scope": "TUHWQEDMYJXZBYVQCFOWEIRBFUAOYE",
+    "extra": "SSNCJOOLALF",
+    "retry": {
+      "max_attempts": 36,
+      "base_delay": "25ms",
+      "deadline": "30s"
+    },
+    "tags": [
+      {
+        "key": "K",
+        "value": "JIZRWWCJOOJQDSAJGYPR"
+      }
+    ]
+  },
+  "admin_endpoint": {
+    "host": "LZGJWTDBRNNXOXAFLX",
+    "port": 953
+  },
+  "global_thresholds": {
+    "MCLB": [
+      {
+        "metric_name": "JHEOTPDHTLIAVPFJROGNZJVGQZE",
+        "warn_at": 4373.7523,
+        "crit_at": -3358.8368,
+        "evaluation_window": "10s"
+      },
+      {
+        "metric_name": "PTTTWCH",
+        "warn_at": -1325.4672,
+        "crit_at": -3876.5591,
+        "evaluation_window": "5s"
+      }
+    ],
+    "FYR": []
+  },
+  "warmup_delay": "10ms"
+}

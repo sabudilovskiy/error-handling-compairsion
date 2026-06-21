@@ -1,0 +1,34 @@
+{
+  "service_name": "ZJLJFYWWRVIDAHMX",
+  "worker_threads": 107,
+  "enable_tracing": false,
+  "shutdown_grace_period": "1m",
+  "rate_limits": [],
+  "allowed_origins": [],
+  "config_tree": {
+    "scope": "RRZVGKRDWUCJNCQPUTEVZNQKANLS",
+    "extra": "Y",
+    "retry": {
+      "max_attempts": 48,
+      "base_delay": "50ms",
+      "backoff_multiplier": -1890.8414,
+      "deadline": "5s"
+    },
+    "endpoint_overrides": {},
+    "tags": [
+      {
+        "key": "XTRRREIV",
+        "value": "LKFKDSSZI"
+      },
+      {
+        "key": "L",
+        "value": ""
+      }
+    ]
+  },
+  "admin_endpoint": {
+    "host": "ICXWPA",
+    "port": 40701
+  },
+  "warmup_delay": "25ms"
+}

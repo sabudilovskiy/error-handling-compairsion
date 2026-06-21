@@ -1,0 +1,30 @@
+{
+  "service_name": "LIEFVAKQOTCKRT",
+  "worker_threads": 88,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "rate_limits": [
+    [
+      "SCYW",
+      5647,
+      false
+    ],
+    [
+      "VHXZNCYIG",
+      6235,
+      true
+    ],
+    [
+      "ANBMPEAHNXDTADYSGGKACE",
+      15726,
+      true
+    ],
+    [
+      "GNCMGUYCWSEFTXB",
+      15,
+      false
+    ]
+  ],
+  "allowed_origins": [],
+  "global_thresholds": {}
+}

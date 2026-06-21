@@ -1,0 +1,82 @@
+{
+  "service_name": "VQVLEMALPIUZOWTHRAVTEOLFKGBSGC",
+  "worker_threads": 131,
+  "enable_tracing": false,
+  "shutdown_grace_period": "15s",
+  "routes": {},
+  "rate_limits": [
+    [
+      "NODVNERKTRFWBRFQCMTNVTPPTMRAUXCGZVILLWMVJDIHKLLQSZYQFAMNBQAHVNB",
+      38824,
+      false
+    ],
+    [
+      "FCWIBNIPLTUXBQOLGKJOPWPHFORLFGYXHTA",
+      94769,
+      false
+    ]
+  ],
+  "allowed_origins": [],
+  "config_tree": {
+    "scope": "DLRQEAKZVIUDHZQ",
+    "extra": "PULIVOXFOJTBIKQUWOWZGXJQIAVAWAER",
+    "retry": {
+      "max_attempts": 24,
+      "base_delay": "10ms",
+      "deadline": "10s"
+    }
+  },
+  "admin_endpoint": {
+    "host": "MZGSRLLUXMSFAWWEAZBCNRGZMZDWLGJIZWVRP",
+    "port": 40770
+  },
+  "global_thresholds": {
+    "SHCNL": [
+      {
+        "metric_name": "EVCXJJWFYVVUNLFAGPTOPFBVTKOHKDHALLIGWNJHQEQ",
+        "warn_at": 8053.7238,
+        "crit_at": -3349.7041,
+        "evaluation_window": "10s"
+      },
+      {
+        "metric_name": "WHOOZBYHNRWYZMQVOVBDRSVJLYXAKYPL",
+        "warn_at": 2650.6868,
+        "crit_at": -6592.8773,
+        "evaluation_window": "5s"
+      }
+    ],
+    "BNZLJ": [
+      {
+        "metric_name": "JMZTKEEIUBVTZZMNNTVIKNYMPMMZFFZGIDIQBUXW",
+        "warn_at": -2824.1156,
+        "crit_at": 4692.9735,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "GXARJBAZFGFGWZJGFYJRATDLVPRGODQAUEZMQPUJOLUMNQAWIAEPYLW",
+        "warn_at": -7939.3415,
+        "crit_at": 6865.6957,
+        "evaluation_window": "1m"
+      },
+      {
+        "metric_name": "LYCELBHDNCZBAHADVVSTXUXASHSZPUGOYKNURKZHMCUTKBZYVLEJDPTEVIAGH",
+        "warn_at": -7535.5878,
+        "crit_at": -1281.4585,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "TMYZPKGTURTLCHKMITSE",
+        "warn_at": 6769.5399,
+        "crit_at": 3324.513,
+        "evaluation_window": "5s"
+      },
+      {
+        "metric_name": "DDXSUPFLRETTSIMKJLLKQ",
+        "warn_at": 1965.9042,
+        "crit_at": -8576.5584,
+        "evaluation_window": "10s"
+      }
+    ]
+  },
+  "warmup_delay": "50ms"
+}

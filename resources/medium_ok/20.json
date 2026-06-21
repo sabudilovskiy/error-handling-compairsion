@@ -1,0 +1,20 @@
+{
+  "service_name": "VZYEIVUDKSFANNCDEKPSONGGKUVK",
+  "worker_threads": 84,
+  "enable_tracing": true,
+  "shutdown_grace_period": "10s",
+  "env": {
+    "DCG": "YJJWIFTD"
+  },
+  "rate_limits": [
+    [
+      "SHBAZUTJIEWUKTXOEUIRNFFMWD",
+      68980,
+      false
+    ]
+  ],
+  "allowed_origins": [
+    "QGNFFCDZJAZUZKVXMOQ"
+  ],
+  "global_thresholds": {}
+}

@@ -1,0 +1,31 @@
+{
+  "service_name": "CPYIBAEVSPYXLKYAIPZGXNRRV",
+  "worker_threads": 25,
+  "enable_tracing": false,
+  "shutdown_grace_period": "15s",
+  "rate_limits": [],
+  "config_tree": {
+    "scope": "IOWDYGWUZJDBS",
+    "extra": "ULPGQSUWZQAULHTNJLSDCQVQGDTV",
+    "log_level": "info",
+    "retry": {
+      "max_attempts": 23,
+      "base_delay": "50ms"
+    },
+    "tags": [
+      {
+        "key": "RVTTJLMQMJEVPBFNTXMD",
+        "value": "HZCTVOOZMZCQNPJWNCGXVIOPXZFAARD"
+      },
+      {
+        "key": "GIQOKQINNTPITPVPPEXMPJUZO",
+        "value": "VFTMWTIKUM"
+      }
+    ]
+  },
+  "admin_endpoint": {
+    "host": "RATOBFATYSDVWLLPSBGEITANZZ",
+    "port": 52438
+  },
+  "warmup_delay": "10ms"
+}

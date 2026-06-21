@@ -1,0 +1,69 @@
+{
+  "service_name": "BCCLFXZVJITGTBSVFNUMZXQLROQIBALOKMNQFRFHHAFKFEQQLQVRFOZNXQYLZ",
+  "worker_threads": 152,
+  "enable_tracing": true,
+  "shutdown_grace_period": "2m",
+  "backends": [],
+  "routes": {
+    "HPIPQQ": {
+      "pattern": "LVOOLSXRXOPVHKWFTIYPJJZWQRQQUTSNJXGPQLVTCZKXAGXDBSUBI",
+      "backend_names": [
+        "YQEIHGBNWYBBLLFHVACDCABXALIEFXFQWAMSBZHEBALTUXXDJKPAJORYTX",
+        "MTWEPHCVVKDAOZEQ",
+        "QKEKIITNUAWREVBIBEFFDOUHQ"
+      ],
+      "timeout_override": "10ms"
+    },
+    "CICSH": {
+      "pattern": "ZTWLIVNIQYAEBMNFDQXCHDDAFYHDGAQVOOJRUMG",
+      "backend_names": [],
+      "timeout_override": "500ms"
+    },
+    "SS": {
+      "pattern": "NQS",
+      "backend_names": [
+        "LAQDTLJWLJAVNDDJGYVAZOBNUPOGSTCAJALJXCHYPGDSLMWOEYL",
+        "DDCTKUM"
+      ],
+      "timeout_override": "10ms"
+    },
+    "XW": {
+      "pattern": "LOEZLIPQPXXZNPVJMHFPTIRNWVWCSXS",
+      "backend_names": [
+        "EZNCZCVZUBEJMHWVVKOFQJDERYNDKQHWQIFFOWHMLZYSXEOOXAZTMXFMQBPIMIW",
+        "UPLRKWXVCYXHRTGMVMUAKOQWOU",
+        "MGXSTM"
+      ]
+    },
+    "YZGIXS": {
+      "pattern": "PZTEATVNPIQSFOWGYCLAPRVVCYSPVKOIQOACT",
+      "timeout_override": "200ms"
+    }
+  },
+  "env": {
+    "BFP": "OVJEAJROALBRMSOGVJPUEPWR",
+    "CIKJ": "ZJUUMQCQUGMTQEZQUCJBH"
+  },
+  "rate_limits": [
+    [
+      "DDV",
+      81861,
+      true
+    ],
+    [
+      "CKOLFPOJOEWOUGIKFDHP",
+      18954,
+      false
+    ],
+    [
+      "ZEHIZRUMMZXKIXTQSWXKXM",
+      75100,
+      false
+    ]
+  ],
+  "admin_endpoint": {
+    "host": "VCLJMPFILOPCFKMEADLFLCXYUNARKHTMRJPUELK",
+    "port": 13247
+  },
+  "global_thresholds": {}
+}

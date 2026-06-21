@@ -1,0 +1,53 @@
+{
+  "service_name": "ZYCI",
+  "worker_threads": 31,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "backends": [
+    {
+      "name": "MNTYYAWOIXZHSDK",
+      "endpoints": [
+        {
+          "address": {
+            "host": "",
+            "port": 35481
+          },
+          "connect_timeout": "10s",
+          "retry": {
+            "max_attempts": 38,
+            "base_delay": null,
+            "deadline": "5s"
+          }
+        },
+        {
+          "address": {
+            "host": "HYOJANR",
+            "port": 60435
+          },
+          "connect_timeout": "10ms",
+          "retry": {
+            "max_attempts": 63,
+            "base_delay": "200ms",
+            "backoff_multiplier": 4862.9332
+          }
+        }
+      ],
+      "min_log_level": "critical"
+    },
+    {
+      "name": "PQMSBPHXZMNVFLRWYV",
+      "endpoints": [],
+      "min_log_level": "debug"
+    }
+  ],
+  "env": {},
+  "rate_limits": [
+    [
+      "TSSMUFFQHAYGRRHMQLSLOI",
+      65921,
+      false
+    ]
+  ],
+  "allowed_origins": [],
+  "warmup_delay": "500ms"
+}

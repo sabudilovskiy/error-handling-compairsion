@@ -1,0 +1,48 @@
+{
+  "service_name": "LIEFVAKQOTCKRT",
+  "worker_threads": 179,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "rate_limits": [
+    [
+      "SCYW",
+      38366,
+      false
+    ],
+    [
+      "VHXZNCYIG",
+      39654,
+      true
+    ],
+    [
+      "ANBMPEAHNXDTADYSGGKACE",
+      53976,
+      true
+    ],
+    [
+      "GNCMGUYCWSEFTXB",
+      5417,
+      false
+    ]
+  ],
+  "allowed_origins": [
+    "BDWMHFTQBXLVQSSYWCLDSLOGMGSXAMZ"
+  ],
+  "config_tree": {
+    "scope": "HOI",
+    "extra": "CJUJDQZBAM",
+    "nested": {
+      "scope": "NUHDYMQLRLEVJFWIABZFIFD",
+      "extra": "ABBOGZMJTAZLJEPRIEC",
+      "retry": {
+        "max_attempts": 12,
+        "base_delay": "10ms",
+        "backoff_multiplier": 1238.5097
+      }
+    }
+  },
+  "admin_endpoint": {
+    "host": "TPLDBIQEFZUCFYZHAGF",
+    "port": 31040
+  }
+}

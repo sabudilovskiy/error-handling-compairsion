@@ -1,0 +1,45 @@
+{
+  "service_name": "XLZWXUQAOYHUBFDLPHM",
+  "worker_threads": 139,
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s",
+  "backends": [
+    {
+      "name": "YMFYZCETTOEEAAGYGFFJKGRVUGFWG",
+      "endpoints": [],
+      "min_log_level": "error",
+      "alerts": {
+        "EIC": {
+          "metric_name": "TSATVWKCJL",
+          "warn_at": 6370.3615,
+          "crit_at": -385.0963,
+          "evaluation_window": "5s"
+        }
+      }
+    },
+    {
+      "name": "AXLMARZNLMSAOBWFTGDYHOLQLQIYODS",
+      "endpoints": [],
+      "min_log_level": "warning",
+      "fallback_retry": {
+        "max_attempts": 94,
+        "base_delay": "10ms",
+        "backoff_multiplier": 2216.5508
+      }
+    },
+    {
+      "name": "RCJVKJFZCUEXWJPFXBCTRMBHXTLIO",
+      "endpoints": [],
+      "min_log_level": "info",
+      "alerts": {},
+      "fallback_retry": {
+        "max_attempts": 49,
+        "base_delay": "1s",
+        "backoff_multiplier": 4633.2885
+      }
+    }
+  ],
+  "env": {},
+  "rate_limits": [],
+  "allowed_origins": []
+}

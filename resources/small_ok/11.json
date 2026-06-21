@@ -1,0 +1,6 @@
+{
+  "service_name": "RYOOQSGFZQPUTZ",
+  "worker_threads": 2,
+  "enable_tracing": true,
+  "shutdown_grace_period": "5s"
+}

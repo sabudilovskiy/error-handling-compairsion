@@ -1,0 +1,9 @@
+{
+  "service_name": "BCCLFXZVJITGTBSVFNUMZXQLROQIBA",
+  "worker_threads": 13,
+  "enable_tracing": false,
+  "shutdown_grace_period": "2m",
+  "env": {
+    "AFK": "QQLQV"
+  }
+}

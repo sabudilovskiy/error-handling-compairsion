@@ -1,0 +1,32 @@
+{
+  "service_name": "ERT",
+  "worker_threads": 182,
+  "enable_tracing": true,
+  "shutdown_grace_period": "15s",
+  "routes": {
+    "ETG": {
+      "pattern": "NHCDNK"
+    },
+    "QWXVZI": {
+      "pattern": "VOEGAYJUVICQRIXDSNF",
+      "backend_names": [
+        "ZPLFMZIMQVVFH",
+        "GXWRNAHGBKLVWYMDPEXPQGRZ"
+      ]
+    }
+  },
+  "env": {},
+  "rate_limits": [
+    [
+      "ANNVRIOEVQQAUOLVLCHMGRDTEDVUJQ",
+      60691,
+      true
+    ],
+    [
+      "FZQCOQKQPXZWMMYMWCKHZQKS",
+      57585,
+      false
+    ]
+  ],
+  "warmup_delay": "10ms"
+}

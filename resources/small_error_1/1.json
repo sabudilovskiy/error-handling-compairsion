@@ -1,0 +1,6 @@
+{
+  "service_name": "ZYCI",
+  "worker_threads": "bad_value_2674",
+  "enable_tracing": false,
+  "shutdown_grace_period": "5s"
+}

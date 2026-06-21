@@ -1,0 +1,7 @@
+{
+  "service_name": "RELTPUS",
+  "worker_threads": 1,
+  "enable_tracing": true,
+  "shutdown_grace_period": "1m",
+  "global_thresholds": "bad_value_7388"
+}
