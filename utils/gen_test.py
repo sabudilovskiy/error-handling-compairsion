@@ -1354,12 +1354,20 @@ def _load_config(path: str | None) -> GenConfig:
     return base
 
 
+def _clean_group(group: str, tests_dir: str, resources_dir: str) -> None:
+    """Remove all existing files in <tests_dir>/<group>/ and <resources_dir>/<group>/."""
+    import shutil
+    for base in (tests_dir, resources_dir):
+        d = Path(base) / group
+        if d.exists():
+            shutil.rmtree(d)
+            print(f"  cleaned {d}")
+
 def _default_tests_dir() -> str:
-    return str(_SCRIPT_DIR.parent / "tests/generated")
+    return str(_SCRIPT_DIR.parent / "tests" / "generated")
 
 def _default_resources_dir() -> str:
     return str(_SCRIPT_DIR.parent / "resources")
-
 
 def parse_args():
     p = argparse.ArgumentParser(
@@ -1378,6 +1386,8 @@ def parse_args():
                    help="root for .cpp output (default: <repo>/tests)")
     p.add_argument("--resources-dir", metavar="DIR", default=None,
                    help="root for .json output (default: <repo>/resources)")
+    p.add_argument("--clean", action="store_true", default=False,
+                   help="delete existing <group> directories before generating")
 
     sub = p.add_subparsers(dest="cmd", required=True)
 
@@ -1402,6 +1412,8 @@ def parse_args():
 def main():
     args = parse_args()
     cfg = _load_config(args.config)
+    if args.clean:
+        _clean_group(args.group, args.tests_dir, args.resources_dir)
     if args.quantity is not None:
         for seed in range(1, args.quantity + 1):
             generate_one(args, seed, cfg)

@@ -52,7 +52,7 @@ def load_jsonc(path: Path) -> object:
 _REQUIRED     = {"cmd", "group"}
 _BAD_REQUIRED = {"error", "at"}
 _KNOWN        = {"cmd", "group", "quantity", "seed", "config",
-                 "tests_dir", "resources_dir", "error", "at"}
+                 "tests_dir", "resources_dir", "clean", "error", "at"}
 _CMDS         = ("ok", "bad")
 _ERRORS       = ("missing_field", "wrong_type")
 
@@ -104,6 +104,9 @@ def _build_argv(entry: dict, gen_test: Path) -> list[str]:
 
     if "resources_dir" in entry:
         argv += ["--resources-dir", str(entry["resources_dir"])]
+
+    if entry.get("clean"):
+        argv.append("--clean")
 
     # subcommand
     argv.append(entry["cmd"])
